@@ -1,0 +1,26 @@
+usage: train_hf.py [-h] --model MODEL --data DATA --output OUTPUT
+                   [--method {uniform,scalar,frontier,atoms_frontier}]
+                   [--device DEVICE] [--steps STEPS] [--pool-size POOL_SIZE]
+                   [--reference-size REFERENCE_SIZE] [--lr LR] [--seed SEED]
+                   [--gradient-filter GRADIENT_FILTER]
+                   [--max-gradient-elements MAX_GRADIENT_ELEMENTS]
+                   [--lora-rank LORA_RANK] [--max-length MAX_LENGTH]
+                   [--optimizer {sgd,adamw}]
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL
+  --data DATA
+  --output OUTPUT
+  --method {uniform,scalar,frontier,atoms_frontier}
+  --device DEVICE
+  --steps STEPS
+  --pool-size POOL_SIZE
+  --reference-size REFERENCE_SIZE
+  --lr LR
+  --seed SEED
+  --gradient-filter GRADIENT_FILTER
+  --max-gradient-elements MAX_GRADIENT_ELEMENTS
+  --lora-rank LORA_RANK
+  --max-length MAX_LENGTH
+  --optimizer {sgd,adamw}

@@ -1,0 +1,10 @@
+{
+  "experiment": "tiny_sft",
+  "steps": 25,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "output": "results"
+}

@@ -1,0 +1,50 @@
+﻿id,title,year,venue,primary_url,category,evidence_depth
+tiger,Recommender Systems with Generative Retrieval,2023,paper,https://arxiv.org/abs/2305.05065,LLM4Rec,L0 primary page/abstract/documentation inspected
+lcrec,Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation,2023/2024,paper,https://arxiv.org/abs/2311.09049,LLM4Rec,L0 primary page/abstract/documentation inspected
+minionerec,MiniOneRec: An Open-Source Framework for Scaling Generative Recommendation,2025,preprint/project,https://arxiv.org/html/2510.24431v1,LLM4Rec,L0 primary page/abstract/documentation inspected
+openonerec,OpenOneRec Technical Report,2025,preprint/project,https://arxiv.org/html/2512.24762v2,LLM4Rec,L0 primary page/abstract/documentation inspected
+genrec,GenRec: An LLM-Backed Recommendation Ranker at Netflix,2026,preprint,https://arxiv.org/html/2608.10257,LLM4Rec,L0+ selected HTML methods inspected; not full reproduction
+recast,ReCast: Recasting Learning Signals for Reinforcement Learning in Generative Recommendation,2026,preprint,https://arxiv.org/html/2604.22169v1,RL,L0+ selected HTML methods inspected; not full reproduction
+dealrec,Data-efficient Fine-tuning for LLM-based Recommendation,2024,SIGIR,https://arxiv.org/html/2401.17197v2,selection,L0 primary page/abstract/documentation inspected
+goracs,GORACS: Group-level Optimal Transport-guided Coreset Selection for LLM-based Recommender Systems,2025,KDD,https://arxiv.org/html/2506.04015v1,selection,L0 primary page/abstract/documentation inspected
+morec,A Data-Centric Multi-Objective Learning Framework for Responsible Recommendation Systems,2024,WWW,https://arxiv.org/html/2310.13260v1,multiobjective,L0+ selected HTML methods inspected; not full reproduction
+minirec,MiniRec: Data-Efficient Reinforcement Learning for LLM-based Recommendation,2026,preprint,https://arxiv.org/html/2602.04278v1,RL,L0+ selected HTML methods inspected; not full reproduction
+capt,Data-Efficient Adaptation to Contextual Shifts in LLM-based Conversational Recommendation,2026,Findings of ACL,https://aclanthology.org/2026.findings-acl.1114/,selection,L0 primary page/abstract/documentation inspected
+less,LESS: Selecting Influential Data for Targeted Instruction Tuning,2024,ICML,https://proceedings.mlr.press/v235/xia24c.html,selection,L0 primary page/abstract/documentation inspected
+ogs,Training Data Selection with Gradient Orthogonality for Efficient Domain Adaptation,2026,preprint,https://arxiv.org/html/2602.06359v1,selection,L0+ selected HTML methods inspected; not full reproduction
+ren-reweight,Learning to Reweight Examples for Robust Deep Learning,2018,ICML,https://arxiv.org/html/1803.09050v3,selection,L0 primary page/abstract/documentation inspected
+filter-weight,Filter-then-Weight: Online Data Selection and Reweighting for LLM Fine-Tuning,2026,preprint,https://arxiv.org/html/2604.00001v2,selection,L0+ selected HTML methods inspected; not full reproduction
+partition-match,Minibatch Selection for Language Models via Partition Matroid Constrained Gradient Matching,2026,preprint,https://arxiv.org/html/2606.07954v2,selection,L0+ selected HTML methods inspected; not full reproduction
+gaia,Online Data Selection for Instruction Tuning via Gaussian Processes,2026,preprint,https://arxiv.org/abs/2606.30077,selection,L0 primary page/abstract/documentation inspected
+atoms,"Gradient Atoms: Unsupervised Discovery, Attribution and Steering of Model Behaviors via Sparse Decomposition of Training Gradients",2026,preprint,https://arxiv.org/html/2603.14665v2,attribution,L0+ selected HTML methods inspected; not full reproduction
+rise,Sketching the Readout of Large Language Models for Scalable Data Attribution and Valuation,2026,preprint,https://arxiv.org/html/2604.16197v2,attribution,L0+ selected HTML methods inspected; not full reproduction
+ippo,Learning from the Right Rollouts: Data Attribution for PPO-based LLM Post-Training,2026,preprint,https://arxiv.org/abs/2604.01597,RL,L0 primary page/abstract/documentation inspected
+nash,Is Data Shapley Not Better than Random in Data Selection? Ask NASH,2026,preprint,https://arxiv.org/abs/2605.10684,attribution,L0 primary page/abstract/documentation inspected
+stagewise,Influence Dynamics and Stagewise Data Attribution,2025,preprint,https://arxiv.org/abs/2510.12071,attribution,L0 primary page/abstract/documentation inspected
+dograph,Rethinking Data Mixing from the Perspective of Large Language Models,2026,ACL short,https://aclanthology.org/2026.acl-short.28/,mixture,L0+ selected HTML methods inspected; not full reproduction
+climb,Nemotron-CLIMB: CLustering-based Iterative Data Mixture Bootstrapping for Language Model Pre-training,2025,paper/project,https://arxiv.org/abs/2504.13161,mixture,L0 primary page/abstract/documentation inspected
+automixalign,AutoMixAlign: Adaptive Data Mixing for Multi-Task Preference Optimization in LLMs,2025,ACL,https://aclanthology.org/2025.acl-long.990/,mixture,L0 primary page/abstract/documentation inspected
+mde,Optimizing Pre-Training Data Mixtures with Mixtures of Data Expert Models,2025,ACL,https://aclanthology.org/2025.acl-long.1564/,mixture,L0 primary page/abstract/documentation inspected
+phase,Data Mixing Can Induce Phase Transitions in Knowledge Acquisition,2025,paper,https://arxiv.org/abs/2505.18091,mixture,L0 primary page/abstract/documentation inspected
+doremi,DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining,2023,NeurIPS,https://arxiv.org/abs/2305.10429,mixture,L0 primary page/abstract/documentation inspected
+mgda,Multi-Task Learning as Multi-Objective Optimization,2018,NeurIPS,https://proceedings.neurips.cc/paper/2018/hash/432aca3a1e345e339f35a30c8f65edce-Abstract.html,multiobjective,L0 primary page/abstract/documentation inspected
+pie,PIE: Personalized Interest Exploration for Large-Scale Recommender Systems,2023,WWW source,https://arxiv.org/html/2304.06844v1,exploration,L0 primary page/abstract/documentation inspected
+frec,Modeling User Fatigue for Sequential Recommendation,2024,SIGIR,https://arxiv.org/html/2405.11764v2,exploration,L0 primary page/abstract/documentation inspected
+atspeed,Efficient Inference for Large Language Model-based Generative Recommendation,2024/2025,ICLR,https://arxiv.org/abs/2410.05165,decoding,L0 primary page/abstract/documentation inspected
+specgr,Inductive Generative Recommendation via Retrieval-based Speculation,2024/2026,AAAI,https://arxiv.org/html/2410.02939v1,decoding,L0+ selected HTML methods inspected; not full reproduction
+specdecode,Fast Inference from Transformers via Speculative Decoding,2023,ICML,https://proceedings.mlr.press/v202/leviathan23a.html,decoding,L0 primary page/abstract/documentation inspected
+kuairand,KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos,2022,CIKM/data,https://kuairand.com/,dataset,L0 primary page/abstract/documentation inspected
+kuaisar,KuaiSAR: A Unified Search And Recommendation Dataset,2023,dataset,https://kuaisar.github.io/,dataset,L0 primary page/abstract/documentation inspected
+kuaisim,KuaiSim: A Comprehensive Simulator for Recommender Systems,2023,NeurIPS,https://arxiv.org/abs/2309.12645,dataset,L0 primary page/abstract/documentation inspected
+amazon23,Amazon Reviews 2023,2023/2024,dataset,https://amazon-reviews-2023.github.io/,dataset,L0 primary page/abstract/documentation inspected
+dr,Doubly Robust Policy Evaluation and Learning,2011,ICML,https://arxiv.org/html/1103.4601v2,evaluation,L0 primary page/abstract/documentation inspected
+datafinder,DataFinder: Scientific Dataset Recommendation from Natural Language Descriptions,2023,ACL,https://aclanthology.org/2023.acl-long.573/,science,L0 primary page/abstract/documentation inspected
+scirepeval,SciRepEval: A Multi-Format Benchmark for Scientific Document Representations,2022/2023,paper/benchmark,https://arxiv.org/html/2211.13308v4,science,L0 primary page/abstract/documentation inspected
+specter,SPECTER: Document-level Representation Learning using Citation-informed Transformers,2020,ACL,https://aclanthology.org/2020.acl-main.207/,science,L0 primary page/abstract/documentation inspected
+precursor,Precursor recommendation for inorganic synthesis by machine learning materials similarity from scientific literature,2023,Science Advances,https://arxiv.org/html/2302.02303v2,science,L0 primary page/abstract/documentation inspected
+failed-experiments,Machine-learning-assisted materials discovery using failed experiments,2016,Nature,https://doi.org/10.1038/nature17439,science,L0 primary page/abstract/documentation inspected
+synthesis-reflection,A critical reflection on attempts to machine-learn materials synthesis,2025,Faraday Discussions,https://doi.org/10.1039/D4FD00112E,science,L0 primary page/abstract/documentation inspected
+www2027,ACM Web Conference 2027 Research Track Papers,2026,official CFP,https://www2027.thewebconf.org/research-track-papers/,venue,L0 primary page/abstract/documentation inspected
+greats,GREATS: Online Selection of High-Quality Data for LLM Training in Every Iteration,2024,NeurIPS,https://proceedings.neurips.cc/paper_files/paper/2024/hash/ed165f2ff227cf36c7e3ef88957dadd9-Abstract-Conference.html,selection,L0 primary page/abstract/documentation inspected
+gradmatch,GRAD-MATCH: Gradient Matching based Data Subset Selection for Efficient Deep Model Training,2021,ICML,https://arxiv.org/abs/2103.00123,selection,L0 primary page/abstract/documentation inspected
+globe,GLOBE: Trajectory-Aligned Gradient Matching with Structured SparseOptimization for Coreset Selection,2026,preprint; search-index abstract only,https://arxiv.org/abs/2608.02690,attribution,L0 primary arXiv abstract in search index only; direct page fetch failed

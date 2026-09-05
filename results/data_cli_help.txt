@@ -1,0 +1,13 @@
+usage: prepare_kuairand.py [-h] --logs LOGS [LOGS ...] --output OUTPUT
+                           --train-end-ms TRAIN_END_MS
+                           --selection-end-ms SELECTION_END_MS
+                           [--max-rows MAX_ROWS] [--history HISTORY]
+
+options:
+  -h, --help            show this help message and exit
+  --logs LOGS [LOGS ...]
+  --output OUTPUT
+  --train-end-ms TRAIN_END_MS
+  --selection-end-ms SELECTION_END_MS
+  --max-rows MAX_ROWS
+  --history HISTORY

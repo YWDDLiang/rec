@@ -1,0 +1,5 @@
+{
+  "experiment": "tiny_rl",
+  "steps": 80,
+  "output": "results"
+}

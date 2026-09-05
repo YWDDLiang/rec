@@ -1,0 +1,2045 @@
+{
+  "evidence": "synthetic complete-feedback categorical RL; no LLM, no real-user causal evidence",
+  "runs": [
+    {
+      "seed": 0,
+      "method": "base_prompt",
+      "final_expected_reward": [
+        0.5248848975900268,
+        0.5454951917414638
+      ],
+      "loss_trace": [
+        {
+          "surrogate_value": 9.274420342819667e-09,
+          "gradient_norm": 0.05870623141527176
+        },
+        {
+          "surrogate_value": 1.5444433287825632e-08,
+          "gradient_norm": 0.10158015787601471
+        },
+        {
+          "surrogate_value": 1.6453364892754507e-08,
+          "gradient_norm": 0.12801533937454224
+        },
+        {
+          "surrogate_value": -6.984919309616089e-10,
+          "gradient_norm": 0.10711678862571716
+        },
+        {
+          "surrogate_value": 7.761021270091817e-10,
+          "gradient_norm": 0.09967032074928284
+        },
+        {
+          "surrogate_value": 9.313225746154785e-10,
+          "gradient_norm": 0.10147922486066818
+        },
+        {
+          "surrogate_value": 1.3581787250416255e-08,
+          "gradient_norm": 0.09740062057971954
+        },
+        {
+          "surrogate_value": 2.5223320321288156e-08,
+          "gradient_norm": 0.0960281491279602
+        },
+        {
+          "surrogate_value": 1.6298145055770874e-09,
+          "gradient_norm": 0.0958484336733818
+        },
+        {
+          "surrogate_value": -4.03573130469681e-09,
+          "gradient_norm": 0.10055545717477798
+        },
+        {
+          "surrogate_value": 1.5366822481155396e-08,
+          "gradient_norm": 0.09624508768320084
+        },
+        {
+          "surrogate_value": 9.158005020992732e-09,
+          "gradient_norm": 0.07251210510730743
+        },
+        {
+          "surrogate_value": 1.7772739724364328e-08,
+          "gradient_norm": 0.08803710341453552
+        },
+        {
+          "surrogate_value": 9.158005020992732e-09,
+          "gradient_norm": 0.0649482011795044
+        },
+        {
+          "surrogate_value": 8.07146260939362e-09,
+          "gradient_norm": 0.09297779202461243
+        },
+        {
+          "surrogate_value": 1.0244548320770264e-08,
+          "gradient_norm": 0.11978310346603394
+        },
+        {
+          "surrogate_value": 5.432715166620028e-09,
+          "gradient_norm": 0.12965577840805054
+        },
+        {
+          "surrogate_value": 5.432715166620028e-09,
+          "gradient_norm": 0.11223604530096054
+        },
+        {
+          "surrogate_value": 6.2088170160734535e-09,
+          "gradient_norm": 0.10053027421236038
+        },
+        {
+          "surrogate_value": 8.149072527885437e-09,
+          "gradient_norm": 0.0884469747543335
+        },
+        {
+          "surrogate_value": 3.1044085080367267e-09,
+          "gradient_norm": 0.06883411854505539
+        },
+        {
+          "surrogate_value": 5.432715166620028e-09,
+          "gradient_norm": 0.06268299371004105
+        },
+        {
+          "surrogate_value": 1.753990908071046e-08,
+          "gradient_norm": 0.08246655762195587
+        },
+        {
+          "surrogate_value": 1.055498888291595e-08,
+          "gradient_norm": 0.09236503392457962
+        },
+        {
+          "surrogate_value": 1.412505934439423e-08,
+          "gradient_norm": 0.1206086277961731
+        },
+        {
+          "surrogate_value": 1.0710209608078003e-08,
+          "gradient_norm": 0.06674438714981079
+        },
+        {
+          "surrogate_value": 1.416386385955093e-08,
+          "gradient_norm": 0.09154690057039261
+        },
+        {
+          "surrogate_value": 3.570069795344466e-09,
+          "gradient_norm": 0.12538616359233856
+        },
+        {
+          "surrogate_value": 1.2960906126124883e-08,
+          "gradient_norm": 0.1470034122467041
+        },
+        {
+          "surrogate_value": 1.552204231813903e-08,
+          "gradient_norm": 0.10461016744375229
+        },
+        {
+          "surrogate_value": 1.9868215517249155e-08,
+          "gradient_norm": 0.06530547142028809
+        },
+        {
+          "surrogate_value": 1.9402554229941416e-08,
+          "gradient_norm": 0.12107754498720169
+        },
+        {
+          "surrogate_value": 7.372970234342802e-09,
+          "gradient_norm": 0.0656001940369606
+        },
+        {
+          "surrogate_value": 1.459072063170197e-08,
+          "gradient_norm": 0.08247386664152145
+        },
+        {
+          "surrogate_value": 2.6387472207289875e-09,
+          "gradient_norm": 0.07604087144136429
+        },
+        {
+          "surrogate_value": 1.0399769045932317e-08,
+          "gradient_norm": 0.11212966591119766
+        },
+        {
+          "surrogate_value": 1.9014501972947073e-08,
+          "gradient_norm": 0.14256002008914948
+        },
+        {
+          "surrogate_value": 2.0838342607021332e-08,
+          "gradient_norm": 0.13819707930088043
+        },
+        {
+          "surrogate_value": 1.1641532182693481e-08,
+          "gradient_norm": 0.07210861891508102
+        },
+        {
+          "surrogate_value": 1.5522044760629683e-09,
+          "gradient_norm": 0.10593520104885101
+        },
+        {
+          "surrogate_value": 9.468446471316838e-09,
+          "gradient_norm": 0.09596911817789078
+        },
+        {
+          "surrogate_value": 2.219652195378785e-08,
+          "gradient_norm": 0.12060962617397308
+        },
+        {
+          "surrogate_value": 1.6298145055770874e-08,
+          "gradient_norm": 0.10030335932970047
+        },
+        {
+          "surrogate_value": 3.880510579534757e-09,
+          "gradient_norm": 0.12136794626712799
+        },
+        {
+          "surrogate_value": 5.3551048040390015e-09,
+          "gradient_norm": 0.10063096880912781
+        },
+        {
+          "surrogate_value": 1.4202669262886047e-08,
+          "gradient_norm": 0.10947580635547638
+        },
+        {
+          "surrogate_value": 1.4745940468685603e-08,
+          "gradient_norm": 0.10833890736103058
+        },
+        {
+          "surrogate_value": 1.8005570368018198e-08,
+          "gradient_norm": 0.09544000774621964
+        },
+        {
+          "surrogate_value": 1.2728075482471013e-08,
+          "gradient_norm": 0.12983699142932892
+        },
+        {
+          "surrogate_value": 1.0399769045932317e-08,
+          "gradient_norm": 0.061144642531871796
+        },
+        {
+          "surrogate_value": 1.8936892942633676e-08,
+          "gradient_norm": 0.1354745328426361
+        },
+        {
+          "surrogate_value": 6.3640377412355065e-09,
+          "gradient_norm": 0.07504018396139145
+        },
+        {
+          "surrogate_value": 1.008932759560821e-08,
+          "gradient_norm": 0.09495369344949722
+        },
+        {
+          "surrogate_value": 2.204130034044738e-08,
+          "gradient_norm": 0.08916109800338745
+        },
+        {
+          "surrogate_value": 4.5013925920045494e-09,
+          "gradient_norm": 0.0790889635682106
+        },
+        {
+          "surrogate_value": 2.6387472207289875e-09,
+          "gradient_norm": 0.12154960632324219
+        },
+        {
+          "surrogate_value": 2.3438284202370596e-08,
+          "gradient_norm": 0.09994210302829742
+        },
+        {
+          "surrogate_value": 1.3969838619232178e-08,
+          "gradient_norm": 0.08669159561395645
+        },
+        {
+          "surrogate_value": 1.055498888291595e-08,
+          "gradient_norm": 0.07557649165391922
+        },
+        {
+          "surrogate_value": 4.889443516731262e-09,
+          "gradient_norm": 0.11933942884206772
+        },
+        {
+          "surrogate_value": -2.7939677238464355e-09,
+          "gradient_norm": 0.09641654044389725
+        },
+        {
+          "surrogate_value": 1.3348956606762385e-08,
+          "gradient_norm": 0.1247122660279274
+        },
+        {
+          "surrogate_value": 1.505638103083129e-08,
+          "gradient_norm": 0.05940646678209305
+        },
+        {
+          "surrogate_value": 2.359350581571107e-08,
+          "gradient_norm": 0.06977352499961853
+        },
+        {
+          "surrogate_value": 1.4280279181377864e-08,
+          "gradient_norm": 0.049131639301776886
+        },
+        {
+          "surrogate_value": 4.03573130469681e-09,
+          "gradient_norm": 0.1036573275923729
+        },
+        {
+          "surrogate_value": 5.199884522966158e-09,
+          "gradient_norm": 0.09840060770511627
+        },
+        {
+          "surrogate_value": 5.277494441457975e-09,
+          "gradient_norm": 0.08788495510816574
+        },
+        {
+          "surrogate_value": 1.6298145055770874e-08,
+          "gradient_norm": 0.10147923231124878
+        },
+        {
+          "surrogate_value": 1.6919026180062247e-08,
+          "gradient_norm": 0.04888070374727249
+        },
+        {
+          "surrogate_value": 2.2351741790771484e-08,
+          "gradient_norm": 0.09384126961231232
+        },
+        {
+          "surrogate_value": 8.226682446377254e-09,
+          "gradient_norm": 0.09445848315954208
+        },
+        {
+          "surrogate_value": 4.229756545015562e-09,
+          "gradient_norm": 0.08557601273059845
+        },
+        {
+          "surrogate_value": -1.1641532182693481e-09,
+          "gradient_norm": 0.07452266663312912
+        },
+        {
+          "surrogate_value": 3.259629011154175e-09,
+          "gradient_norm": 0.10718880593776703
+        },
+        {
+          "surrogate_value": 1.234002411365509e-08,
+          "gradient_norm": 0.05592541769146919
+        },
+        {
+          "surrogate_value": 1.3504177331924438e-08,
+          "gradient_norm": 0.08989637345075607
+        },
+        {
+          "surrogate_value": 1.2417634032146907e-08,
+          "gradient_norm": 0.09296093881130219
+        },
+        {
+          "surrogate_value": 2.017865652348405e-09,
+          "gradient_norm": 0.09847040474414825
+        },
+        {
+          "surrogate_value": 1.9712993903908682e-08,
+          "gradient_norm": 0.08779986947774887
+        }
+      ],
+      "rollouts": 3840,
+      "group_size": 4,
+      "importance_correction": true,
+      "baseline_distribution": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "allocation_moments": "analytic single-rollout proxy, not exact full-group moments"
+    },
+    {
+      "seed": 0,
+      "method": "variance_prompt",
+      "final_expected_reward": [
+        0.5264109173322558,
+        0.5481623069185844
+      ],
+      "loss_trace": [
+        {
+          "surrogate_value": 8.740940415918885e-09,
+          "gradient_norm": 0.061040740460157394
+        },
+        {
+          "surrogate_value": 1.0290295726633758e-08,
+          "gradient_norm": 0.0949496328830719
+        },
+        {
+          "surrogate_value": 1.0425384111556468e-08,
+          "gradient_norm": 0.13226354122161865
+        },
+        {
+          "surrogate_value": -1.1294811308459884e-08,
+          "gradient_norm": 0.1055573895573616
+        },
+        {
+          "surrogate_value": 6.1234834980439246e-09,
+          "gradient_norm": 0.0912647694349289
+        },
+        {
+          "surrogate_value": 3.5247760266088335e-09,
+          "gradient_norm": 0.1001214012503624
+        },
+        {
+          "surrogate_value": 1.2857417353018263e-08,
+          "gradient_norm": 0.09321442991495132
+        },
+        {
+          "surrogate_value": 2.1755470314133163e-08,
+          "gradient_norm": 0.10722756385803223
+        },
+        {
+          "surrogate_value": 9.127908207062774e-09,
+          "gradient_norm": 0.0885203555226326
+        },
+        {
+          "surrogate_value": 1.990116071937109e-09,
+          "gradient_norm": 0.09420517832040787
+        },
+        {
+          "surrogate_value": 1.6150131898484688e-08,
+          "gradient_norm": 0.09652625769376755
+        },
+        {
+          "surrogate_value": 1.3397770004530685e-08,
+          "gradient_norm": 0.08200319111347198
+        },
+        {
+          "surrogate_value": 1.2634508550490864e-08,
+          "gradient_norm": 0.08867970108985901
+        },
+        {
+          "surrogate_value": 3.7758116633312966e-09,
+          "gradient_norm": 0.06908544152975082
+        },
+        {
+          "surrogate_value": 1.182530184884456e-09,
+          "gradient_norm": 0.09486546367406845
+        },
+        {
+          "surrogate_value": 1.6073036235297877e-08,
+          "gradient_norm": 0.13258977234363556
+        },
+        {
+          "surrogate_value": 2.401026710785459e-09,
+          "gradient_norm": 0.12202156335115433
+        },
+        {
+          "surrogate_value": 8.57719850699823e-09,
+          "gradient_norm": 0.1064550131559372
+        },
+        {
+          "surrogate_value": 1.4656012403690966e-08,
+          "gradient_norm": 0.09897294640541077
+        },
+        {
+          "surrogate_value": 1.0972087238769745e-08,
+          "gradient_norm": 0.11763649433851242
+        },
+        {
+          "surrogate_value": -1.5582491963428424e-09,
+          "gradient_norm": 0.07050194591283798
+        },
+        {
+          "surrogate_value": 1.2996728138148228e-08,
+          "gradient_norm": 0.08146896213293076
+        },
+        {
+          "surrogate_value": 1.92459150838431e-08,
+          "gradient_norm": 0.07555471360683441
+        },
+        {
+          "surrogate_value": 1.6795873136743467e-08,
+          "gradient_norm": 0.10375867784023285
+        },
+        {
+          "surrogate_value": 1.2211280875362718e-08,
+          "gradient_norm": 0.10884963721036911
+        },
+        {
+          "surrogate_value": 1.2152622019812043e-08,
+          "gradient_norm": 0.07618545740842819
+        },
+        {
+          "surrogate_value": 6.257915519114476e-09,
+          "gradient_norm": 0.08832225203514099
+        },
+        {
+          "surrogate_value": 2.3410349214714188e-08,
+          "gradient_norm": 0.12228910624980927
+        },
+        {
+          "surrogate_value": 1.144824590681992e-08,
+          "gradient_norm": 0.18721066415309906
+        },
+        {
+          "surrogate_value": 9.530174871485997e-09,
+          "gradient_norm": 0.11076851934194565
+        },
+        {
+          "surrogate_value": 1.4625217481523123e-08,
+          "gradient_norm": 0.06224171817302704
+        },
+        {
+          "surrogate_value": 9.685507507128932e-09,
+          "gradient_norm": 0.1075984537601471
+        },
+        {
+          "surrogate_value": 6.863903223575107e-09,
+          "gradient_norm": 0.07060147821903229
+        },
+        {
+          "surrogate_value": -2.6683424914075715e-10,
+          "gradient_norm": 0.07969892770051956
+        },
+        {
+          "surrogate_value": -1.5768076844224765e-09,
+          "gradient_norm": 0.09396608918905258
+        },
+        {
+          "surrogate_value": 1.0979563036528361e-08,
+          "gradient_norm": 0.125701442360878
+        },
+        {
+          "surrogate_value": 1.1967531854395475e-08,
+          "gradient_norm": 0.1536494642496109
+        },
+        {
+          "surrogate_value": 2.6700925914724394e-08,
+          "gradient_norm": 0.1723739504814148
+        },
+        {
+          "surrogate_value": 1.348983591498154e-08,
+          "gradient_norm": 0.07058186084032059
+        },
+        {
+          "surrogate_value": 8.042996491042231e-09,
+          "gradient_norm": 0.09692209959030151
+        },
+        {
+          "surrogate_value": 3.511052115712232e-09,
+          "gradient_norm": 0.09695964306592941
+        },
+        {
+          "surrogate_value": 3.5245061980049286e-08,
+          "gradient_norm": 0.11293543130159378
+        },
+        {
+          "surrogate_value": 1.0296961505673607e-08,
+          "gradient_norm": 0.10713664442300797
+        },
+        {
+          "surrogate_value": 4.470332992667636e-09,
+          "gradient_norm": 0.1115884929895401
+        },
+        {
+          "surrogate_value": 2.1005555073116966e-09,
+          "gradient_norm": 0.10493078827857971
+        },
+        {
+          "surrogate_value": 1.9080367508195195e-08,
+          "gradient_norm": 0.09501781314611435
+        },
+        {
+          "surrogate_value": 8.11070588468965e-09,
+          "gradient_norm": 0.10576684772968292
+        },
+        {
+          "surrogate_value": 1.6719369000384177e-08,
+          "gradient_norm": 0.08982735872268677
+        },
+        {
+          "surrogate_value": -1.764402957071809e-09,
+          "gradient_norm": 0.1205177828669548
+        },
+        {
+          "surrogate_value": 1.310509656349268e-08,
+          "gradient_norm": 0.07832220941781998
+        },
+        {
+          "surrogate_value": 8.790488337240276e-09,
+          "gradient_norm": 0.12424159049987793
+        },
+        {
+          "surrogate_value": 9.02632724120167e-09,
+          "gradient_norm": 0.08305418491363525
+        },
+        {
+          "surrogate_value": 1.1721870585290617e-08,
+          "gradient_norm": 0.09300263971090317
+        },
+        {
+          "surrogate_value": 1.422289042096736e-08,
+          "gradient_norm": 0.09126970171928406
+        },
+        {
+          "surrogate_value": 5.694176796744443e-10,
+          "gradient_norm": 0.07405529916286469
+        },
+        {
+          "surrogate_value": 5.243216083528068e-09,
+          "gradient_norm": 0.11379599571228027
+        },
+        {
+          "surrogate_value": 1.4768706257939357e-08,
+          "gradient_norm": 0.09871277213096619
+        },
+        {
+          "surrogate_value": 1.6662930590882752e-08,
+          "gradient_norm": 0.08832401782274246
+        },
+        {
+          "surrogate_value": 1.414840156144237e-08,
+          "gradient_norm": 0.08473774790763855
+        },
+        {
+          "surrogate_value": 1.8726540318425577e-08,
+          "gradient_norm": 0.15339112281799316
+        },
+        {
+          "surrogate_value": 7.815765812324571e-09,
+          "gradient_norm": 0.09369207173585892
+        },
+        {
+          "surrogate_value": 5.857282658894292e-09,
+          "gradient_norm": 0.12213975191116333
+        },
+        {
+          "surrogate_value": 1.662724535833604e-08,
+          "gradient_norm": 0.05686350539326668
+        },
+        {
+          "surrogate_value": 2.215315930698125e-08,
+          "gradient_norm": 0.07432739436626434
+        },
+        {
+          "surrogate_value": 1.1610478800605506e-08,
+          "gradient_norm": 0.04660610854625702
+        },
+        {
+          "surrogate_value": -1.255133441624423e-09,
+          "gradient_norm": 0.11108332872390747
+        },
+        {
+          "surrogate_value": -2.8485309666592684e-09,
+          "gradient_norm": 0.10205040127038956
+        },
+        {
+          "surrogate_value": 1.3911805929467391e-08,
+          "gradient_norm": 0.08713501691818237
+        },
+        {
+          "surrogate_value": 1.5235196215712676e-08,
+          "gradient_norm": 0.09122856706380844
+        },
+        {
+          "surrogate_value": 1.551009987110774e-09,
+          "gradient_norm": 0.03277946636080742
+        },
+        {
+          "surrogate_value": 1.9620927105279407e-08,
+          "gradient_norm": 0.09542068094015121
+        },
+        {
+          "surrogate_value": 1.1396100063620906e-08,
+          "gradient_norm": 0.09214363247156143
+        },
+        {
+          "surrogate_value": 1.2319393505322296e-08,
+          "gradient_norm": 0.09928368777036667
+        },
+        {
+          "surrogate_value": -7.51469997339882e-09,
+          "gradient_norm": 0.10838571190834045
+        },
+        {
+          "surrogate_value": 7.066800478128243e-09,
+          "gradient_norm": 0.09486891329288483
+        },
+        {
+          "surrogate_value": 1.0813280049148943e-08,
+          "gradient_norm": 0.055801600217819214
+        },
+        {
+          "surrogate_value": 1.0431691954693179e-08,
+          "gradient_norm": 0.07293055951595306
+        },
+        {
+          "surrogate_value": 4.778780149372608e-10,
+          "gradient_norm": 0.10636341571807861
+        },
+        {
+          "surrogate_value": 2.7628856980044247e-09,
+          "gradient_norm": 0.10588588565587997
+        },
+        {
+          "surrogate_value": 7.011995872829857e-09,
+          "gradient_norm": 0.08318641036748886
+        }
+      ],
+      "rollouts": 3840,
+      "group_size": 4,
+      "importance_correction": true,
+      "baseline_distribution": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "allocation_moments": "analytic single-rollout proxy, not exact full-group moments"
+    },
+    {
+      "seed": 1,
+      "method": "base_prompt",
+      "final_expected_reward": [
+        0.5282090922272925,
+        0.5449232277935383
+      ],
+      "loss_trace": [
+        {
+          "surrogate_value": 1.4435499906539917e-08,
+          "gradient_norm": 0.07253039628267288
+        },
+        {
+          "surrogate_value": 1.5793679253306436e-08,
+          "gradient_norm": 0.07469071447849274
+        },
+        {
+          "surrogate_value": 1.8316010041985464e-08,
+          "gradient_norm": 0.09318114817142487
+        },
+        {
+          "surrogate_value": 1.8277205526828766e-08,
+          "gradient_norm": 0.09486223757266998
+        },
+        {
+          "surrogate_value": 1.257285475730896e-08,
+          "gradient_norm": 0.09213763475418091
+        },
+        {
+          "surrogate_value": 1.1331091620547795e-08,
+          "gradient_norm": 0.08191501349210739
+        },
+        {
+          "surrogate_value": 1.8548840685639334e-08,
+          "gradient_norm": 0.08397611230611801
+        },
+        {
+          "surrogate_value": 1.8936892942633676e-08,
+          "gradient_norm": 0.10910516232252121
+        },
+        {
+          "surrogate_value": 1.234002411365509e-08,
+          "gradient_norm": 0.12307056784629822
+        },
+        {
+          "surrogate_value": 1.4901161193847656e-08,
+          "gradient_norm": 0.14407925307750702
+        },
+        {
+          "surrogate_value": 5.898376453927767e-09,
+          "gradient_norm": 0.1037387028336525
+        },
+        {
+          "surrogate_value": 8.149072527885437e-09,
+          "gradient_norm": 0.12118801474571228
+        },
+        {
+          "surrogate_value": 4.3461718668424965e-09,
+          "gradient_norm": 0.08833786100149155
+        },
+        {
+          "surrogate_value": 9.002785184009099e-09,
+          "gradient_norm": 0.10553956776857376
+        },
+        {
+          "surrogate_value": -3.8805106350459084e-10,
+          "gradient_norm": 0.11493001878261566
+        },
+        {
+          "surrogate_value": 2.6853134826865244e-08,
+          "gradient_norm": 0.10932815819978714
+        },
+        {
+          "surrogate_value": 1.102065017022369e-08,
+          "gradient_norm": 0.10622616857290268
+        },
+        {
+          "surrogate_value": 3.996925901361692e-09,
+          "gradient_norm": 0.09649405628442764
+        },
+        {
+          "surrogate_value": 3.1975407210893536e-08,
+          "gradient_norm": 0.11925352364778519
+        },
+        {
+          "surrogate_value": 3.1044085080367267e-09,
+          "gradient_norm": 0.10417129844427109
+        },
+        {
+          "surrogate_value": 2.0101046160903024e-08,
+          "gradient_norm": 0.12184679508209229
+        },
+        {
+          "surrogate_value": 1.7850348754677725e-08,
+          "gradient_norm": 0.10829326510429382
+        },
+        {
+          "surrogate_value": 6.402842700481415e-09,
+          "gradient_norm": 0.1018255427479744
+        },
+        {
+          "surrogate_value": 1.3348956606762385e-08,
+          "gradient_norm": 0.12179930508136749
+        },
+        {
+          "surrogate_value": 2.5223318989020527e-09,
+          "gradient_norm": 0.09809380024671555
+        },
+        {
+          "surrogate_value": 1.2417634032146907e-08,
+          "gradient_norm": 0.12561480700969696
+        },
+        {
+          "surrogate_value": 1.1796752907855534e-08,
+          "gradient_norm": 0.10512636601924896
+        },
+        {
+          "surrogate_value": -5.432714833553121e-10,
+          "gradient_norm": 0.1455552726984024
+        },
+        {
+          "surrogate_value": 8.692343733684993e-09,
+          "gradient_norm": 0.10374568402767181
+        },
+        {
+          "surrogate_value": 9.623666308300471e-09,
+          "gradient_norm": 0.15179131925106049
+        },
+        {
+          "surrogate_value": 2.5223318989020527e-09,
+          "gradient_norm": 0.12101778388023376
+        },
+        {
+          "surrogate_value": 2.0489096641540527e-08,
+          "gradient_norm": 0.047747790813446045
+        },
+        {
+          "surrogate_value": 2.2351741790771484e-08,
+          "gradient_norm": 0.09523768723011017
+        },
+        {
+          "surrogate_value": 1.1641532182693481e-08,
+          "gradient_norm": 0.08303767442703247
+        },
+        {
+          "surrogate_value": 5.122274160385132e-09,
+          "gradient_norm": 0.09254498034715652
+        },
+        {
+          "surrogate_value": 3.14321368932724e-09,
+          "gradient_norm": 0.16065774857997894
+        },
+        {
+          "surrogate_value": 1.3659398057086491e-08,
+          "gradient_norm": 0.12615594267845154
+        },
+        {
+          "surrogate_value": 1.8316010041985464e-08,
+          "gradient_norm": 0.08449137210845947
+        },
+        {
+          "surrogate_value": 1.2417634032146907e-08,
+          "gradient_norm": 0.06254050135612488
+        },
+        {
+          "surrogate_value": 1.0399769045932317e-08,
+          "gradient_norm": 0.052106477320194244
+        },
+        {
+          "surrogate_value": 4.5013925920045494e-09,
+          "gradient_norm": 0.09576410055160522
+        },
+        {
+          "surrogate_value": 1.614292521878724e-08,
+          "gradient_norm": 0.076964370906353
+        },
+        {
+          "surrogate_value": 1.280568540096283e-08,
+          "gradient_norm": 0.07763037085533142
+        },
+        {
+          "surrogate_value": 9.623666308300471e-09,
+          "gradient_norm": 0.1705995798110962
+        },
+        {
+          "surrogate_value": 9.934107758624577e-09,
+          "gradient_norm": 0.1043713316321373
+        },
+        {
+          "surrogate_value": 1.6530975699424744e-08,
+          "gradient_norm": 0.10674021393060684
+        },
+        {
+          "surrogate_value": 1.6065314412117004e-08,
+          "gradient_norm": 0.12675750255584717
+        },
+        {
+          "surrogate_value": 1.56772639314795e-08,
+          "gradient_norm": 0.13140147924423218
+        },
+        {
+          "surrogate_value": 1.0632599689586186e-08,
+          "gradient_norm": 0.08206941187381744
+        },
+        {
+          "surrogate_value": 1.0865428556883217e-09,
+          "gradient_norm": 0.11061955988407135
+        },
+        {
+          "surrogate_value": 1.5832483768463135e-08,
+          "gradient_norm": 0.09878701716661453
+        },
+        {
+          "surrogate_value": 1.3969838619232178e-08,
+          "gradient_norm": 0.12605267763137817
+        },
+        {
+          "surrogate_value": 1.932494342327118e-08,
+          "gradient_norm": 0.10044391453266144
+        },
+        {
+          "surrogate_value": 7.761021159069514e-09,
+          "gradient_norm": 0.11295562982559204
+        },
+        {
+          "surrogate_value": 6.674478303381193e-09,
+          "gradient_norm": 0.07293649762868881
+        },
+        {
+          "surrogate_value": 1.2184803388493037e-08,
+          "gradient_norm": 0.0765654519200325
+        },
+        {
+          "surrogate_value": 7.683411240577698e-09,
+          "gradient_norm": 0.09812209010124207
+        },
+        {
+          "surrogate_value": 7.2177499532699585e-09,
+          "gradient_norm": 0.045838598161935806
+        },
+        {
+          "surrogate_value": 2.9491882269638836e-09,
+          "gradient_norm": 0.08858183026313782
+        },
+        {
+          "surrogate_value": -6.984919309616089e-10,
+          "gradient_norm": 0.11940103024244308
+        },
+        {
+          "surrogate_value": 2.561137080192566e-09,
+          "gradient_norm": 0.07082483172416687
+        },
+        {
+          "surrogate_value": 9.934107758624577e-09,
+          "gradient_norm": 0.08074691146612167
+        },
+        {
+          "surrogate_value": 2.382633645936494e-08,
+          "gradient_norm": 0.08892414718866348
+        },
+        {
+          "surrogate_value": 1.2728075482471013e-08,
+          "gradient_norm": 0.09381428360939026
+        },
+        {
+          "surrogate_value": 1.6530975699424744e-08,
+          "gradient_norm": 0.06889539211988449
+        },
+        {
+          "surrogate_value": 1.7772739724364328e-08,
+          "gradient_norm": 0.1106337308883667
+        },
+        {
+          "surrogate_value": 1.56772639314795e-08,
+          "gradient_norm": 0.07717712968587875
+        },
+        {
+          "surrogate_value": 8.731149137020111e-09,
+          "gradient_norm": 0.08062437921762466
+        },
+        {
+          "surrogate_value": 1.43578899880481e-08,
+          "gradient_norm": 0.09225793182849884
+        },
+        {
+          "surrogate_value": 1.4435499906539917e-08,
+          "gradient_norm": 0.061545565724372864
+        },
+        {
+          "surrogate_value": 1.3271346688270569e-08,
+          "gradient_norm": 0.031545672565698624
+        },
+        {
+          "surrogate_value": 1.0710209608078003e-08,
+          "gradient_norm": 0.07281406968832016
+        },
+        {
+          "surrogate_value": 1.2262414195163274e-08,
+          "gradient_norm": 0.07030028849840164
+        },
+        {
+          "surrogate_value": 2.5766590638909292e-08,
+          "gradient_norm": 0.13821278512477875
+        },
+        {
+          "surrogate_value": 8.925174377338863e-09,
+          "gradient_norm": 0.07536081969738007
+        },
+        {
+          "surrogate_value": 1.7384687467369986e-08,
+          "gradient_norm": 0.08087222278118134
+        },
+        {
+          "surrogate_value": 1.2417634032146907e-08,
+          "gradient_norm": 0.08693601936101913
+        },
+        {
+          "surrogate_value": 1.707424779340272e-08,
+          "gradient_norm": 0.10264044255018234
+        },
+        {
+          "surrogate_value": 7.450580596923828e-09,
+          "gradient_norm": 0.08456555008888245
+        },
+        {
+          "surrogate_value": 1.8548840685639334e-08,
+          "gradient_norm": 0.0918978601694107
+        }
+      ],
+      "rollouts": 3840,
+      "group_size": 4,
+      "importance_correction": true,
+      "baseline_distribution": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "allocation_moments": "analytic single-rollout proxy, not exact full-group moments"
+    },
+    {
+      "seed": 1,
+      "method": "variance_prompt",
+      "final_expected_reward": [
+        0.5271801260342055,
+        0.542806253350336
+      ],
+      "loss_trace": [
+        {
+          "surrogate_value": 1.5157029409351708e-08,
+          "gradient_norm": 0.08101413398981094
+        },
+        {
+          "surrogate_value": 1.2517598513284156e-08,
+          "gradient_norm": 0.06145250052213669
+        },
+        {
+          "surrogate_value": 1.1051753290303168e-08,
+          "gradient_norm": 0.0942317396402359
+        },
+        {
+          "surrogate_value": 2.2976507807470625e-08,
+          "gradient_norm": 0.10384652763605118
+        },
+        {
+          "surrogate_value": 1.4150675076152197e-09,
+          "gradient_norm": 0.08857175707817078
+        },
+        {
+          "surrogate_value": 1.2234091961715876e-08,
+          "gradient_norm": 0.0776662603020668
+        },
+        {
+          "surrogate_value": 1.8692754011340185e-08,
+          "gradient_norm": 0.07829870283603668
+        },
+        {
+          "surrogate_value": 1.8068492479983433e-08,
+          "gradient_norm": 0.09670329838991165
+        },
+        {
+          "surrogate_value": 9.70769775676672e-09,
+          "gradient_norm": 0.11993326246738434
+        },
+        {
+          "surrogate_value": 2.1160113661267133e-09,
+          "gradient_norm": 0.1382560282945633
+        },
+        {
+          "surrogate_value": 8.568506792983044e-09,
+          "gradient_norm": 0.09696934372186661
+        },
+        {
+          "surrogate_value": 1.539814498130454e-08,
+          "gradient_norm": 0.12735715508460999
+        },
+        {
+          "surrogate_value": 6.120810525089837e-09,
+          "gradient_norm": 0.0872616246342659
+        },
+        {
+          "surrogate_value": 1.2713504027317413e-08,
+          "gradient_norm": 0.10410933196544647
+        },
+        {
+          "surrogate_value": 1.4291202887761756e-08,
+          "gradient_norm": 0.11199210584163666
+        },
+        {
+          "surrogate_value": 9.586669236227863e-09,
+          "gradient_norm": 0.10027046501636505
+        },
+        {
+          "surrogate_value": 1.4871591735854395e-09,
+          "gradient_norm": 0.10016334801912308
+        },
+        {
+          "surrogate_value": 1.4682693283418757e-08,
+          "gradient_norm": 0.10004299134016037
+        },
+        {
+          "surrogate_value": 7.640985622003882e-09,
+          "gradient_norm": 0.11679446697235107
+        },
+        {
+          "surrogate_value": 1.284546069513226e-08,
+          "gradient_norm": 0.10513455420732498
+        },
+        {
+          "surrogate_value": 4.766335326422677e-09,
+          "gradient_norm": 0.1178516373038292
+        },
+        {
+          "surrogate_value": 1.1649951225933819e-08,
+          "gradient_norm": 0.10553597658872604
+        },
+        {
+          "surrogate_value": 7.743336638554865e-09,
+          "gradient_norm": 0.10612412542104721
+        },
+        {
+          "surrogate_value": 1.5335610115130294e-08,
+          "gradient_norm": 0.12572981417179108
+        },
+        {
+          "surrogate_value": 1.3911133356359073e-09,
+          "gradient_norm": 0.09174104034900665
+        },
+        {
+          "surrogate_value": 1.1477546912885828e-08,
+          "gradient_norm": 0.12346165627241135
+        },
+        {
+          "surrogate_value": 1.359616774720962e-08,
+          "gradient_norm": 0.09609700739383698
+        },
+        {
+          "surrogate_value": 6.813019037821277e-09,
+          "gradient_norm": 0.1349780261516571
+        },
+        {
+          "surrogate_value": 6.004187813601902e-09,
+          "gradient_norm": 0.11454810947179794
+        },
+        {
+          "surrogate_value": 1.974345131827704e-08,
+          "gradient_norm": 0.1512443572282791
+        },
+        {
+          "surrogate_value": 2.4619287941618495e-08,
+          "gradient_norm": 0.11286765336990356
+        },
+        {
+          "surrogate_value": 1.3386425301575855e-08,
+          "gradient_norm": 0.037663184106349945
+        },
+        {
+          "surrogate_value": 1.0933875138618987e-08,
+          "gradient_norm": 0.08989860117435455
+        },
+        {
+          "surrogate_value": 2.600162218868718e-08,
+          "gradient_norm": 0.10613787174224854
+        },
+        {
+          "surrogate_value": 3.4419305183774895e-09,
+          "gradient_norm": 0.08321867138147354
+        },
+        {
+          "surrogate_value": 1.3383989028170618e-08,
+          "gradient_norm": 0.1607004553079605
+        },
+        {
+          "surrogate_value": 6.216149817106498e-09,
+          "gradient_norm": 0.1304050087928772
+        },
+        {
+          "surrogate_value": 1.6886778197999774e-08,
+          "gradient_norm": 0.09820502251386642
+        },
+        {
+          "surrogate_value": 1.0025316576900423e-08,
+          "gradient_norm": 0.0802503228187561
+        },
+        {
+          "surrogate_value": 7.991183714750605e-09,
+          "gradient_norm": 0.04496735334396362
+        },
+        {
+          "surrogate_value": 1.494015400282933e-08,
+          "gradient_norm": 0.08374805748462677
+        },
+        {
+          "surrogate_value": 1.504044178091135e-08,
+          "gradient_norm": 0.06910580396652222
+        },
+        {
+          "surrogate_value": 1.5166252254061874e-08,
+          "gradient_norm": 0.08721379190683365
+        },
+        {
+          "surrogate_value": 2.1715363729413184e-08,
+          "gradient_norm": 0.11483775079250336
+        },
+        {
+          "surrogate_value": 1.6770224320339366e-08,
+          "gradient_norm": 0.09831591695547104
+        },
+        {
+          "surrogate_value": 6.458631407468829e-09,
+          "gradient_norm": 0.10239849984645844
+        },
+        {
+          "surrogate_value": 2.149682387653229e-08,
+          "gradient_norm": 0.11544862389564514
+        },
+        {
+          "surrogate_value": 1.5619738391592364e-08,
+          "gradient_norm": 0.09584418684244156
+        },
+        {
+          "surrogate_value": -1.228847579248793e-09,
+          "gradient_norm": 0.08798955380916595
+        },
+        {
+          "surrogate_value": 8.009171104106372e-09,
+          "gradient_norm": 0.1046983152627945
+        },
+        {
+          "surrogate_value": 2.5917371360151265e-08,
+          "gradient_norm": 0.09269814938306808
+        },
+        {
+          "surrogate_value": 5.42364508859805e-09,
+          "gradient_norm": 0.12323956936597824
+        },
+        {
+          "surrogate_value": 1.517277503637615e-08,
+          "gradient_norm": 0.10702285915613174
+        },
+        {
+          "surrogate_value": 1.0489578983197134e-08,
+          "gradient_norm": 0.11818693578243256
+        },
+        {
+          "surrogate_value": 1.1445336234316983e-08,
+          "gradient_norm": 0.07217084616422653
+        },
+        {
+          "surrogate_value": 9.031311698493028e-09,
+          "gradient_norm": 0.07978721708059311
+        },
+        {
+          "surrogate_value": 9.987801696809129e-09,
+          "gradient_norm": 0.09274805337190628
+        },
+        {
+          "surrogate_value": 1.0457044119505099e-08,
+          "gradient_norm": 0.049552734941244125
+        },
+        {
+          "surrogate_value": 5.3931850096944345e-09,
+          "gradient_norm": 0.11097057163715363
+        },
+        {
+          "surrogate_value": 1.9487018221298058e-08,
+          "gradient_norm": 0.10960958153009415
+        },
+        {
+          "surrogate_value": 1.8914320776275417e-08,
+          "gradient_norm": 0.09923455119132996
+        },
+        {
+          "surrogate_value": 4.760418281790635e-09,
+          "gradient_norm": 0.08457876741886139
+        },
+        {
+          "surrogate_value": 1.9016283658856992e-08,
+          "gradient_norm": 0.11197834461927414
+        },
+        {
+          "surrogate_value": 7.853934391732764e-09,
+          "gradient_norm": 0.09482840448617935
+        },
+        {
+          "surrogate_value": 1.602359134267317e-08,
+          "gradient_norm": 0.05205770954489708
+        },
+        {
+          "surrogate_value": 1.723012665877377e-08,
+          "gradient_norm": 0.11314181983470917
+        },
+        {
+          "surrogate_value": 1.9479534429933665e-08,
+          "gradient_norm": 0.08145641535520554
+        },
+        {
+          "surrogate_value": 1.9064186673745098e-08,
+          "gradient_norm": 0.08687105029821396
+        },
+        {
+          "surrogate_value": 1.2721279141203468e-08,
+          "gradient_norm": 0.09107021242380142
+        },
+        {
+          "surrogate_value": 9.57894563669015e-09,
+          "gradient_norm": 0.06879813224077225
+        },
+        {
+          "surrogate_value": 1.1138990174686114e-08,
+          "gradient_norm": 0.031357716768980026
+        },
+        {
+          "surrogate_value": 1.0028056607325198e-08,
+          "gradient_norm": 0.0701676458120346
+        },
+        {
+          "surrogate_value": 9.084592633712418e-09,
+          "gradient_norm": 0.07056569308042526
+        },
+        {
+          "surrogate_value": 6.9531349566887e-09,
+          "gradient_norm": 0.143755242228508
+        },
+        {
+          "surrogate_value": 7.36115746136079e-09,
+          "gradient_norm": 0.06962436437606812
+        },
+        {
+          "surrogate_value": 1.904045454637071e-08,
+          "gradient_norm": 0.08718974888324738
+        },
+        {
+          "surrogate_value": 1.2800996707085233e-08,
+          "gradient_norm": 0.08688940107822418
+        },
+        {
+          "surrogate_value": 2.3494571621540672e-08,
+          "gradient_norm": 0.10946198552846909
+        },
+        {
+          "surrogate_value": 2.3895834200260424e-09,
+          "gradient_norm": 0.08633725345134735
+        },
+        {
+          "surrogate_value": 1.3503142604065488e-08,
+          "gradient_norm": 0.09265449643135071
+        }
+      ],
+      "rollouts": 3840,
+      "group_size": 4,
+      "importance_correction": true,
+      "baseline_distribution": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "allocation_moments": "analytic single-rollout proxy, not exact full-group moments"
+    },
+    {
+      "seed": 2,
+      "method": "base_prompt",
+      "final_expected_reward": [
+        0.5347734313129202,
+        0.5480616200383968
+      ],
+      "loss_trace": [
+        {
+          "surrogate_value": 7.450580596923828e-09,
+          "gradient_norm": 0.11294813454151154
+        },
+        {
+          "surrogate_value": 1.4901161193847656e-08,
+          "gradient_norm": 0.10913499444723129
+        },
+        {
+          "surrogate_value": 1.9868215517249155e-08,
+          "gradient_norm": 0.11784807592630386
+        },
+        {
+          "surrogate_value": 2.9491882269638836e-09,
+          "gradient_norm": 0.12106062471866608
+        },
+        {
+          "surrogate_value": -2.405916577075118e-09,
+          "gradient_norm": 0.09247332066297531
+        },
+        {
+          "surrogate_value": 1.8548840685639334e-08,
+          "gradient_norm": 0.10894260555505753
+        },
+        {
+          "surrogate_value": 8.381903171539307e-09,
+          "gradient_norm": 0.0903325155377388
+        },
+        {
+          "surrogate_value": 4.579002510496366e-09,
+          "gradient_norm": 0.14687131345272064
+        },
+        {
+          "surrogate_value": 9.468446471316838e-09,
+          "gradient_norm": 0.11546901613473892
+        },
+        {
+          "surrogate_value": 1.412505934439423e-08,
+          "gradient_norm": 0.07910268753767014
+        },
+        {
+          "surrogate_value": 1.9363747938427878e-08,
+          "gradient_norm": 0.12301863729953766
+        },
+        {
+          "surrogate_value": 5.6267404069387794e-09,
+          "gradient_norm": 0.11207158863544464
+        },
+        {
+          "surrogate_value": 1.0244548320770264e-08,
+          "gradient_norm": 0.09461534768342972
+        },
+        {
+          "surrogate_value": 1.257285475730896e-08,
+          "gradient_norm": 0.11387830227613449
+        },
+        {
+          "surrogate_value": 1.3271346688270569e-08,
+          "gradient_norm": 0.10865670442581177
+        },
+        {
+          "surrogate_value": 1.6298145055770874e-08,
+          "gradient_norm": 0.05983717739582062
+        },
+        {
+          "surrogate_value": 1.2029583551509404e-08,
+          "gradient_norm": 0.09879068285226822
+        },
+        {
+          "surrogate_value": 1.730707843705659e-08,
+          "gradient_norm": 0.1058053970336914
+        },
+        {
+          "surrogate_value": 1.5832483768463135e-08,
+          "gradient_norm": 0.11919081956148148
+        },
+        {
+          "surrogate_value": 3.880510579534757e-09,
+          "gradient_norm": 0.130156010389328
+        },
+        {
+          "surrogate_value": 4.5013925920045494e-09,
+          "gradient_norm": 0.1238371878862381
+        },
+        {
+          "surrogate_value": 1.055498888291595e-08,
+          "gradient_norm": 0.11169875413179398
+        },
+        {
+          "surrogate_value": 2.017865519121642e-08,
+          "gradient_norm": 0.08628454804420471
+        },
+        {
+          "surrogate_value": 3.1820188706177532e-09,
+          "gradient_norm": 0.1124764233827591
+        },
+        {
+          "surrogate_value": 1.0710209608078003e-08,
+          "gradient_norm": 0.11985857039690018
+        },
+        {
+          "surrogate_value": -2.405916577075118e-09,
+          "gradient_norm": 0.1080435961484909
+        },
+        {
+          "surrogate_value": 1.0671404204742885e-08,
+          "gradient_norm": 0.08717283606529236
+        },
+        {
+          "surrogate_value": 1.43578899880481e-08,
+          "gradient_norm": 0.058356061577796936
+        },
+        {
+          "surrogate_value": 7.916241884231567e-09,
+          "gradient_norm": 0.08300282061100006
+        },
+        {
+          "surrogate_value": 4.113341223188627e-09,
+          "gradient_norm": 0.11914528906345367
+        },
+        {
+          "surrogate_value": 1.2728075482471013e-08,
+          "gradient_norm": 0.06057809665799141
+        },
+        {
+          "surrogate_value": 1.0865430333240056e-08,
+          "gradient_norm": 0.08821221441030502
+        },
+        {
+          "surrogate_value": 9.546056389808655e-09,
+          "gradient_norm": 0.09777620434761047
+        },
+        {
+          "surrogate_value": 2.017865519121642e-08,
+          "gradient_norm": 0.09915124624967575
+        },
+        {
+          "surrogate_value": 2.204130034044738e-08,
+          "gradient_norm": 0.11397778242826462
+        },
+        {
+          "surrogate_value": 1.0865430333240056e-08,
+          "gradient_norm": 0.11668629944324493
+        },
+        {
+          "surrogate_value": 1.3193736769778752e-08,
+          "gradient_norm": 0.07685621082782745
+        },
+        {
+          "surrogate_value": 1.3892228700740361e-08,
+          "gradient_norm": 0.09807907044887543
+        },
+        {
+          "surrogate_value": 6.674478303381193e-09,
+          "gradient_norm": 0.10633733868598938
+        },
+        {
+          "surrogate_value": 2.599942261483079e-09,
+          "gradient_norm": 0.10891493409872055
+        },
+        {
+          "surrogate_value": 1.1796752907855534e-08,
+          "gradient_norm": 0.08753857761621475
+        },
+        {
+          "surrogate_value": 1.2844490804297948e-08,
+          "gradient_norm": 0.089905746281147
+        },
+        {
+          "surrogate_value": 1.6298145055770874e-08,
+          "gradient_norm": 0.11797075718641281
+        },
+        {
+          "surrogate_value": 1.707424779340272e-08,
+          "gradient_norm": 0.11922318488359451
+        },
+        {
+          "surrogate_value": 8.07146260939362e-09,
+          "gradient_norm": 0.08694849163293839
+        },
+        {
+          "surrogate_value": 8.187877931220555e-09,
+          "gradient_norm": 0.12327122688293457
+        },
+        {
+          "surrogate_value": 4.967053879312289e-09,
+          "gradient_norm": 0.076382577419281
+        },
+        {
+          "surrogate_value": 7.140139590688932e-09,
+          "gradient_norm": 0.10345941036939621
+        },
+        {
+          "surrogate_value": 1.210719347000122e-08,
+          "gradient_norm": 0.08084240555763245
+        },
+        {
+          "surrogate_value": 9.468446471316838e-09,
+          "gradient_norm": 0.11880581825971603
+        },
+        {
+          "surrogate_value": 1.548323780298233e-08,
+          "gradient_norm": 0.11802390962839127
+        },
+        {
+          "surrogate_value": 3.3372391516905964e-09,
+          "gradient_norm": 0.07584719359874725
+        },
+        {
+          "surrogate_value": 1.2883295319454646e-08,
+          "gradient_norm": 0.12000635266304016
+        },
+        {
+          "surrogate_value": 1.6453364892754507e-08,
+          "gradient_norm": 0.12561672925949097
+        },
+        {
+          "surrogate_value": 1.0244548320770264e-08,
+          "gradient_norm": 0.11451492458581924
+        },
+        {
+          "surrogate_value": 2.1730859334212482e-09,
+          "gradient_norm": 0.13428838551044464
+        },
+        {
+          "surrogate_value": 1.2262414195163274e-08,
+          "gradient_norm": 0.060570128262043
+        },
+        {
+          "surrogate_value": 2.1886080503463745e-08,
+          "gradient_norm": 0.11510614305734634
+        },
+        {
+          "surrogate_value": 1.6880221664905548e-08,
+          "gradient_norm": 0.08590786159038544
+        },
+        {
+          "surrogate_value": 1.0865430333240056e-08,
+          "gradient_norm": 0.07563390582799911
+        },
+        {
+          "surrogate_value": 1.1175870895385742e-08,
+          "gradient_norm": 0.08609151095151901
+        },
+        {
+          "surrogate_value": 8.808759055511928e-09,
+          "gradient_norm": 0.1241784393787384
+        },
+        {
+          "surrogate_value": 3.259629011154175e-09,
+          "gradient_norm": 0.11418913304805756
+        },
+        {
+          "surrogate_value": 5.277494441457975e-09,
+          "gradient_norm": 0.09133463352918625
+        },
+        {
+          "surrogate_value": 1.0865430333240056e-08,
+          "gradient_norm": 0.08945673704147339
+        },
+        {
+          "surrogate_value": 6.3640377412355065e-09,
+          "gradient_norm": 0.08100777119398117
+        },
+        {
+          "surrogate_value": 1.3892228700740361e-08,
+          "gradient_norm": 0.08126336336135864
+        },
+        {
+          "surrogate_value": 9.546056389808655e-09,
+          "gradient_norm": 0.08559010922908783
+        },
+        {
+          "surrogate_value": -3.958120942115784e-09,
+          "gradient_norm": 0.08189883828163147
+        },
+        {
+          "surrogate_value": 1.684141714974885e-08,
+          "gradient_norm": 0.058728817850351334
+        },
+        {
+          "surrogate_value": 7.605801322085881e-09,
+          "gradient_norm": 0.07902339100837708
+        },
+        {
+          "surrogate_value": 2.7939677238464355e-09,
+          "gradient_norm": 0.07442715018987656
+        },
+        {
+          "surrogate_value": 7.295360315850985e-09,
+          "gradient_norm": 0.08307977020740509
+        },
+        {
+          "surrogate_value": 1.3892228700740361e-08,
+          "gradient_norm": 0.12566086649894714
+        },
+        {
+          "surrogate_value": 1.753990908071046e-08,
+          "gradient_norm": 0.04963942617177963
+        },
+        {
+          "surrogate_value": 1.459072063170197e-08,
+          "gradient_norm": 0.09597162157297134
+        },
+        {
+          "surrogate_value": 1.008932759560821e-08,
+          "gradient_norm": 0.048342514783144
+        },
+        {
+          "surrogate_value": 9.158005020992732e-09,
+          "gradient_norm": 0.07586944103240967
+        },
+        {
+          "surrogate_value": 1.210719347000122e-08,
+          "gradient_norm": 0.07145525515079498
+        },
+        {
+          "surrogate_value": 1.1486311457531428e-08,
+          "gradient_norm": 0.1020195409655571
+        }
+      ],
+      "rollouts": 3840,
+      "group_size": 4,
+      "importance_correction": true,
+      "baseline_distribution": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "allocation_moments": "analytic single-rollout proxy, not exact full-group moments"
+    },
+    {
+      "seed": 2,
+      "method": "variance_prompt",
+      "final_expected_reward": [
+        0.5357346107449913,
+        0.547757697748656
+      ],
+      "loss_trace": [
+        {
+          "surrogate_value": 7.330340334732455e-09,
+          "gradient_norm": 0.10951750725507736
+        },
+        {
+          "surrogate_value": 1.701971541478997e-08,
+          "gradient_norm": 0.09259141981601715
+        },
+        {
+          "surrogate_value": 1.289761808465073e-08,
+          "gradient_norm": 0.10918444395065308
+        },
+        {
+          "surrogate_value": 5.8973950167739986e-09,
+          "gradient_norm": 0.11020175367593765
+        },
+        {
+          "surrogate_value": -2.7502951027713607e-09,
+          "gradient_norm": 0.10428725183010101
+        },
+        {
+          "surrogate_value": 1.3373857576937098e-08,
+          "gradient_norm": 0.11220450699329376
+        },
+        {
+          "surrogate_value": 1.0038694320257946e-08,
+          "gradient_norm": 0.09778879582881927
+        },
+        {
+          "surrogate_value": 8.644956750458732e-09,
+          "gradient_norm": 0.1334461122751236
+        },
+        {
+          "surrogate_value": 9.725744654076607e-09,
+          "gradient_norm": 0.11709520220756531
+        },
+        {
+          "surrogate_value": 1.3852823776971945e-08,
+          "gradient_norm": 0.07984741032123566
+        },
+        {
+          "surrogate_value": 1.668272453514419e-08,
+          "gradient_norm": 0.12087119370698929
+        },
+        {
+          "surrogate_value": 7.011748071050761e-09,
+          "gradient_norm": 0.12506568431854248
+        },
+        {
+          "surrogate_value": 1.3706312529393472e-08,
+          "gradient_norm": 0.08816695958375931
+        },
+        {
+          "surrogate_value": 1.3390915931665859e-08,
+          "gradient_norm": 0.14802032709121704
+        },
+        {
+          "surrogate_value": 1.5766666194849677e-08,
+          "gradient_norm": 0.10260281711816788
+        },
+        {
+          "surrogate_value": 1.1091174201283138e-08,
+          "gradient_norm": 0.045247048139572144
+        },
+        {
+          "surrogate_value": 7.174525418207622e-09,
+          "gradient_norm": 0.09747854620218277
+        },
+        {
+          "surrogate_value": 1.0645421433252977e-08,
+          "gradient_norm": 0.10794499516487122
+        },
+        {
+          "surrogate_value": 1.1218811657442984e-08,
+          "gradient_norm": 0.11225168406963348
+        },
+        {
+          "surrogate_value": 3.830880945798754e-09,
+          "gradient_norm": 0.1244824156165123
+        },
+        {
+          "surrogate_value": 1.3405895948892521e-08,
+          "gradient_norm": 0.11655381321907043
+        },
+        {
+          "surrogate_value": 6.046041445273431e-09,
+          "gradient_norm": 0.11307639628648758
+        },
+        {
+          "surrogate_value": 8.041289412119568e-09,
+          "gradient_norm": 0.07952865958213806
+        },
+        {
+          "surrogate_value": 8.248211891270785e-09,
+          "gradient_norm": 0.11104745417833328
+        },
+        {
+          "surrogate_value": 7.853988570616366e-09,
+          "gradient_norm": 0.11264906078577042
+        },
+        {
+          "surrogate_value": 8.978942034332249e-09,
+          "gradient_norm": 0.11614542454481125
+        },
+        {
+          "surrogate_value": 6.875781721760177e-09,
+          "gradient_norm": 0.09239209443330765
+        },
+        {
+          "surrogate_value": 1.7119939244025772e-08,
+          "gradient_norm": 0.059449829161167145
+        },
+        {
+          "surrogate_value": 7.158609705015806e-09,
+          "gradient_norm": 0.09200407564640045
+        },
+        {
+          "surrogate_value": 7.602538154571903e-09,
+          "gradient_norm": 0.13141144812107086
+        },
+        {
+          "surrogate_value": 6.456811973976073e-09,
+          "gradient_norm": 0.05587184801697731
+        },
+        {
+          "surrogate_value": 2.124071407649808e-08,
+          "gradient_norm": 0.08388720452785492
+        },
+        {
+          "surrogate_value": 1.3534051213071052e-08,
+          "gradient_norm": 0.0882473886013031
+        },
+        {
+          "surrogate_value": 1.1215045780943456e-08,
+          "gradient_norm": 0.10679705440998077
+        },
+        {
+          "surrogate_value": 1.0040057674132186e-08,
+          "gradient_norm": 0.10854236036539078
+        },
+        {
+          "surrogate_value": 3.3405385124751774e-09,
+          "gradient_norm": 0.10688004642724991
+        },
+        {
+          "surrogate_value": 2.2343202843444487e-08,
+          "gradient_norm": 0.07988008856773376
+        },
+        {
+          "surrogate_value": 8.297814879654197e-09,
+          "gradient_norm": 0.11175183951854706
+        },
+        {
+          "surrogate_value": 8.149553920588914e-09,
+          "gradient_norm": 0.13387122750282288
+        },
+        {
+          "surrogate_value": 9.18223719281741e-09,
+          "gradient_norm": 0.10424792766571045
+        },
+        {
+          "surrogate_value": 7.3333059624758334e-09,
+          "gradient_norm": 0.09464750438928604
+        },
+        {
+          "surrogate_value": 1.6974711414263766e-08,
+          "gradient_norm": 0.09823204576969147
+        },
+        {
+          "surrogate_value": 2.1479811707081353e-08,
+          "gradient_norm": 0.11910651624202728
+        },
+        {
+          "surrogate_value": 1.0362771973859708e-08,
+          "gradient_norm": 0.10933832079172134
+        },
+        {
+          "surrogate_value": 7.489308728736432e-09,
+          "gradient_norm": 0.09604357182979584
+        },
+        {
+          "surrogate_value": 1.5940115005719235e-08,
+          "gradient_norm": 0.12686358392238617
+        },
+        {
+          "surrogate_value": 3.771688295017839e-09,
+          "gradient_norm": 0.07522889226675034
+        },
+        {
+          "surrogate_value": -8.8769137873701e-11,
+          "gradient_norm": 0.12407944351434708
+        },
+        {
+          "surrogate_value": 1.4125729030922685e-08,
+          "gradient_norm": 0.08866778016090393
+        },
+        {
+          "surrogate_value": 9.389736099763013e-09,
+          "gradient_norm": 0.1197260171175003
+        },
+        {
+          "surrogate_value": 2.0788128551885166e-08,
+          "gradient_norm": 0.12532871961593628
+        },
+        {
+          "surrogate_value": 5.40303046747681e-09,
+          "gradient_norm": 0.07452758401632309
+        },
+        {
+          "surrogate_value": 1.306034391745925e-08,
+          "gradient_norm": 0.10555075109004974
+        },
+        {
+          "surrogate_value": 1.4798838599006103e-08,
+          "gradient_norm": 0.12473750859498978
+        },
+        {
+          "surrogate_value": 2.6186253165860762e-09,
+          "gradient_norm": 0.11973491311073303
+        },
+        {
+          "surrogate_value": 6.404432539852678e-09,
+          "gradient_norm": 0.12420067191123962
+        },
+        {
+          "surrogate_value": 1.538034233306007e-08,
+          "gradient_norm": 0.07131945341825485
+        },
+        {
+          "surrogate_value": 2.4972756307306554e-08,
+          "gradient_norm": 0.10414132475852966
+        },
+        {
+          "surrogate_value": 2.3326505171894496e-08,
+          "gradient_norm": 0.08264618366956711
+        },
+        {
+          "surrogate_value": 1.712439079426531e-08,
+          "gradient_norm": 0.07025673985481262
+        },
+        {
+          "surrogate_value": 2.2373413344212167e-08,
+          "gradient_norm": 0.10824304819107056
+        },
+        {
+          "surrogate_value": 2.3800113879701712e-08,
+          "gradient_norm": 0.14213429391384125
+        },
+        {
+          "surrogate_value": 2.2768530172356805e-08,
+          "gradient_norm": 0.1112983450293541
+        },
+        {
+          "surrogate_value": 1.2690162698447693e-08,
+          "gradient_norm": 0.08286632597446442
+        },
+        {
+          "surrogate_value": -3.4636347123750966e-09,
+          "gradient_norm": 0.07624940574169159
+        },
+        {
+          "surrogate_value": 6.600572172166252e-11,
+          "gradient_norm": 0.09658148139715195
+        },
+        {
+          "surrogate_value": 1.7029808674351443e-08,
+          "gradient_norm": 0.1075940728187561
+        },
+        {
+          "surrogate_value": 9.091444930220405e-09,
+          "gradient_norm": 0.08376267552375793
+        },
+        {
+          "surrogate_value": -1.1127285759471306e-09,
+          "gradient_norm": 0.06840194016695023
+        },
+        {
+          "surrogate_value": 1.377544833758293e-08,
+          "gradient_norm": 0.05248909816145897
+        },
+        {
+          "surrogate_value": 6.382883110944704e-09,
+          "gradient_norm": 0.08050111681222916
+        },
+        {
+          "surrogate_value": 5.227169364019346e-09,
+          "gradient_norm": 0.04403803497552872
+        },
+        {
+          "surrogate_value": 7.520234213131971e-09,
+          "gradient_norm": 0.06783565133810043
+        },
+        {
+          "surrogate_value": 1.1533912491756837e-08,
+          "gradient_norm": 0.12793825566768646
+        },
+        {
+          "surrogate_value": 1.4068011644496892e-08,
+          "gradient_norm": 0.05197281017899513
+        },
+        {
+          "surrogate_value": 2.1443460340719867e-08,
+          "gradient_norm": 0.10078516602516174
+        },
+        {
+          "surrogate_value": 1.1116632059327003e-08,
+          "gradient_norm": 0.05180056765675545
+        },
+        {
+          "surrogate_value": 7.941538093803047e-09,
+          "gradient_norm": 0.06507165729999542
+        },
+        {
+          "surrogate_value": 2.0532326061584172e-08,
+          "gradient_norm": 0.07620405405759811
+        },
+        {
+          "surrogate_value": 1.1140509847962221e-08,
+          "gradient_norm": 0.10356565564870834
+        }
+      ],
+      "rollouts": 3840,
+      "group_size": 4,
+      "importance_correction": true,
+      "baseline_distribution": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "allocation_moments": "analytic single-rollout proxy, not exact full-group moments"
+    }
+  ]
+}

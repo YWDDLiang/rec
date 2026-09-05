@@ -1,0 +1,15 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///mnt/data/delivery/rec
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: llm4rec-research-lab
+  Building editable for llm4rec-research-lab (pyproject.toml): started
+  Building editable for llm4rec-research-lab (pyproject.toml): finished with status 'done'
+  Created wheel for llm4rec-research-lab: filename=llm4rec_research_lab-0.1.0-0.editable-py3-none-any.whl size=2492 sha256=236594725e8887b468acdca857a6995582f115e6ad6bddb14f7a5a7e63bb111f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-mf9uoywd/wheels/a4/8c/86/eaa48e1b104392e1d7f76b0cd13b7131f66438465436d2a0ec
+Successfully built llm4rec-research-lab
+Installing collected packages: llm4rec-research-lab
+Successfully installed llm4rec-research-lab-0.1.0
+/mnt/data/delivery/rec/src/rec_lab/__init__.py

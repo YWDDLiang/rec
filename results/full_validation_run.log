@@ -1,0 +1,266 @@
+........................................................................ [ 65%]
+......................................                                   [100%]
+110 passed in 2.87s
+{
+  "evidence_level": "CPU numerical mechanism checks, synthetic constructs only",
+  "cases": {
+    "01": {
+      "unrestricted_margin": 1.0,
+      "existing_pool_margin": -0.5,
+      "with_verified_bridge_margin": 1.0,
+      "primal_dual_gap": 0.0,
+      "interpretation": "Constructed support gap, not an observed recommendation improvement."
+    },
+    "02": {
+      "invariance_max_error": 1.3072876114961218e-14,
+      "weighted_orthogonality_error": 4.0342560024789425e-14,
+      "not_proven": "Residuals equal true personalized interests."
+    },
+    "03": {
+      "order_identity_error": 5.2845041577819695e-17,
+      "order_effect_norm": 0.025628109567426213,
+      "commuting_null": 0.0
+    },
+    "04": {
+      "true_mean": 0.8,
+      "complete_case_designed_dr_estimate": 0.8000000000000002,
+      "unknown_propensity_handling": "raises ValueError, never replaced by a uniform assumption"
+    },
+    "05": {
+      "base_max_second_moment": 2.9000000000000004,
+      "allocated_max_second_moment": 2.5356906648745747,
+      "q": [
+        0.5628357138037731,
+        0.2475724916696423,
+        0.1895917945265846
+      ],
+      "scope": "Fixed synthetic vector score distribution, not GRPO true-reward guarantee."
+    },
+    "06": {
+      "rank": [
+        0,
+        1
+      ],
+      "scores": [
+        0.7,
+        0.25
+      ],
+      "accepted_verified_pairs": 1,
+      "warning": "Witness violation is necessary, not sufficient. No actual expert labeling performed."
+    },
+    "07": {
+      "pagerank_mass": 1.0,
+      "absorbing_value": [
+        2.962962962962963,
+        2.5925925925925926
+      ],
+      "one_step_epsilon": 0.5,
+      "one_step_lower_value": 0.6,
+      "real_retention_validated": false
+    },
+    "08": {
+      "trie_probability_max_error": 0.0,
+      "speculative_identity_max_error": 1.1102230246251565e-16,
+      "acceptance": 0.6,
+      "wallclock_speedup_measured": false
+    },
+    "09": {
+      "selected": [
+        2,
+        0
+      ],
+      "coverage": 2.42,
+      "optimal_coverage_small_enumeration": 2.42,
+      "ratio": 1.0,
+      "expert_fit_calibrated": false
+    },
+    "10": {
+      "selected_experiments": [
+        0,
+        2
+      ],
+      "gaussian_information": 1.791759469228055,
+      "redundant_pair_information": 1.1945419193053315,
+      "chemistry_or_wet_lab_validated": false
+    },
+    "confidence_gate": {
+      "empirical_response": 1.0,
+      "lower_response": -0.9206455826398414,
+      "decision": "INSUFFICIENT_EVIDENCE, not safe improvement"
+    }
+  }
+}
+{
+  "scope": "constructed exact quadratic target losses, not a benchmark",
+  "eta": 0.1,
+  "cases": {
+    "existing": {
+      "margin": 0.0,
+      "weights": [
+        1.0
+      ],
+      "target_loss_improvements": [
+        0.0,
+        0.0
+      ]
+    },
+    "plus_left": {
+      "margin": 0.0,
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "target_loss_improvements": [
+        0.0,
+        0.0
+      ]
+    },
+    "plus_right": {
+      "margin": 0.0,
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "target_loss_improvements": [
+        0.0,
+        0.0
+      ]
+    },
+    "plus_pair": {
+      "margin": 0.5,
+      "weights": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "target_loss_improvements": [
+        0.048750000000000016,
+        0.048750000000000016
+      ]
+    }
+  },
+  "batch_face_gain": 0.5
+}
+0 uniform [0.7029488682746887, 0.7053327560424805] 0.03
+0 scalar [0.6901130676269531, 0.7327075004577637] 0.14
+0 frontier [0.6939550042152405, 0.7231850624084473] 0.21
+0 atoms_frontier [0.6939550042152405, 0.7231850624084473] 0.38
+1 uniform [0.6951085925102234, 0.6647994518280029] 0.02
+1 scalar [0.7182226181030273, 0.6673789620399475] 0.15
+1 frontier [0.7193194031715393, 0.6638650298118591] 0.23
+1 atoms_frontier [0.7193194031715393, 0.6638650298118591] 0.38
+2 uniform [0.7270059585571289, 0.7001726031303406] 0.02
+2 scalar [0.766996443271637, 0.694291889667511] 0.15
+2 frontier [0.7456941604614258, 0.7029704451560974] 0.21
+2 atoms_frontier [0.7456941604614258, 0.7029704451560974] 0.37
+{
+  "scope": "synthetic CPU experiments only",
+  "sft": {
+    "atoms_frontier": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7196561892827352,
+        0.6966735124588013
+      ],
+      "std_test_bce": [
+        0.025871222254279264,
+        0.030157173074755825
+      ],
+      "mean_elapsed_seconds": 0.3776555259999744
+    },
+    "frontier": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7196561892827352,
+        0.6966735124588013
+      ],
+      "std_test_bce": [
+        0.025871222254279264,
+        0.030157173074755825
+      ],
+      "mean_elapsed_seconds": 0.2178531719999531
+    },
+    "scalar": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7251107096672058,
+        0.6981261173884074
+      ],
+      "std_test_bce": [
+        0.03890177009697336,
+        0.032832612744248486
+      ],
+      "mean_elapsed_seconds": 0.1466082260002016
+    },
+    "uniform": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7083544731140137,
+        0.6901016036669413
+      ],
+      "std_test_bce": [
+        0.01662154965524485,
+        0.02206367966318598
+      ],
+      "mean_elapsed_seconds": 0.023467030666779465
+    }
+  },
+  "rl": {
+    "base_prompt": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_reward": [
+        0.5292891403767465,
+        0.5461600131911329
+      ],
+      "std_reward": [
+        0.005031963116026831,
+        0.0016714865062578553
+      ],
+      "rollouts_per_run": 3840
+    },
+    "variance_prompt": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_reward": [
+        0.5297752180371509,
+        0.5462420860058588
+      ],
+      "std_reward": [
+        0.005175296280551016,
+        0.002982387746867423
+      ],
+      "rollouts_per_run": 3840
+    }
+  },
+  "decision": {
+    "sft_frontier_better_all_objectives": false,
+    "real_llm_tested": false,
+    "real_recommendation_benchmark_tested": false,
+    "atoms_effect": "same solution as full LP in delivered experiment; additional overhead",
+    "conclusion": "do not approve empirical effectiveness from these experiments"
+  }
+}
+OK: Python syntax, local Markdown links and 49 source cards. External URLs not re-fetched.

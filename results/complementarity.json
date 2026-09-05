@@ -1,0 +1,51 @@
+{
+  "scope": "constructed exact quadratic target losses, not a benchmark",
+  "eta": 0.1,
+  "cases": {
+    "existing": {
+      "margin": 0.0,
+      "weights": [
+        1.0
+      ],
+      "target_loss_improvements": [
+        0.0,
+        0.0
+      ]
+    },
+    "plus_left": {
+      "margin": 0.0,
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "target_loss_improvements": [
+        0.0,
+        0.0
+      ]
+    },
+    "plus_right": {
+      "margin": 0.0,
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "target_loss_improvements": [
+        0.0,
+        0.0
+      ]
+    },
+    "plus_pair": {
+      "margin": 0.5,
+      "weights": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "target_loss_improvements": [
+        0.048750000000000016,
+        0.048750000000000016
+      ]
+    }
+  },
+  "batch_face_gain": 0.5
+}

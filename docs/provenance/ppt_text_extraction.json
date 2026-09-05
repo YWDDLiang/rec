@@ -1,0 +1,154 @@
+[
+  {
+    "slide": 1,
+    "text": "\n\n\n\nPART 01\n数据影响力分析"
+  },
+  {
+    "slide": 2,
+    "text": ""
+  },
+  {
+    "slide": 3,
+    "text": ""
+  },
+  {
+    "slide": 4,
+    "text": ""
+  },
+  {
+    "slide": 5,
+    "text": ""
+  },
+  {
+    "slide": 6,
+    "text": ""
+  },
+  {
+    "slide": 7,
+    "text": ""
+  },
+  {
+    "slide": 8,
+    "text": ""
+  },
+  {
+    "slide": 9,
+    "text": "\n\n\n\nPART 02\nData Attribution最新进展\n从单条样例转换为组合分析"
+  },
+  {
+    "slide": 10,
+    "text": ""
+  },
+  {
+    "slide": 11,
+    "text": ""
+  },
+  {
+    "slide": 12,
+    "text": "Data Attribution  语义信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  语义信号组合\n\n\nSketching the Readout of Large Language Models for Scalable Data Attribution and Valuation\n\n只看readout层，不算全模型梯度\n把影响拆成两部分，分别近似data attribution\nlexical residual：词/token层面的误差\nsemantic projected error：语义方向上的误差"
+  },
+  {
+    "slide": 13,
+    "text": "Data Attribution  语义信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  语义信号组合\n\n\nARIA: A Diagnostic Framework for Music Training Data Attribution\n"
+  },
+  {
+    "slide": 14,
+    "text": "Data Attribution  语义信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  语义信号组合\n\n\nCorrecting Influence: Unboxing LLM Outputs with Orthogonal Latent Spaces\n\n不再把token影响简单相加\n先在中间层找更独立的latent features，再反推哪些token起作用\nSAE latent：把混在一起的语义方向拆开\nlatent mediation：看影响是通过哪些中间特征传过去的\n\n冻结原来的 LLM\n在某一层 hidden states 上额外训练稀疏编码器\n用 SAE 学到的 latent features 做 influence 分解"
+  },
+  {
+    "slide": 15,
+    "text": ""
+  },
+  {
+    "slide": 16,
+    "text": "Data Attribution  语义信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  语义信号组合\n\n\nGradient Atoms: Unsupervised Discovery, Attribution and Steering of Model Behaviors via Sparse Decomposition of Training Gradients\n\n把这些高维 gradient 做稀疏分解，用少量 gradient atoms 近似表示每篇文档\n每个 atom 是一个共享的梯度方向\n用同一个 atom 的文档，通常在推动相似的模型行为"
+  },
+  {
+    "slide": 17,
+    "text": "Data Attribution  行为信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  行为信号组合\n\n\nSketching the Readout of Large Language Models for Scalable Data Attribution and Valuation\n\n不默认所有 PPO rollouts 都有用，先找哪些 episode 在把模型带偏\n给每个 episode 算一个 influence score，看它和验证集梯度方向是正向还是反向；正向的保留/加权，负向的丢掉或降权\nrollout：PPO 训练时模型自己生成的一段回答/推理轨迹\nanti-aligned：它的更新方向和验证集想要的方向相反，会拖慢或伤害训练\n\n"
+  },
+  {
+    "slide": 18,
+    "text": ""
+  },
+  {
+    "slide": 19,
+    "text": "Data Attribution  语义信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  推理信号组合\n\n\nProbe-Based Data Attribution: Discovering and Mitigating Undesirable Behaviors in LLM Post-Training\n\n这篇文章训练了一个小模型，每次都能根据上一次获得的信息进行推理\n计算每条数据对于第k次的影响（隐藏状态更新状态），依此说明这个数据是否与长程推理相关"
+  },
+  {
+    "slide": 20,
+    "text": ""
+  },
+  {
+    "slide": 21,
+    "text": "Data Attribution  行为信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  行为信号组合\n\n\nProbe-Based Data Attribution: Discovering and Mitigating Undesirable Behaviors in LLM Post-Training\n\n原本会拒绝教人做坏事的学生，在补课后却学会了“只要对方把坏请求包装成一道格式题就偷偷配合”\n先用一组会触发坏行为/不会触发坏行为的 prompt，算出它们在模型中间层的激活差，得到“坏行为方向”\n再把每条 preference training pair 也转成一个激活差方向，和“坏行为方向”算 cosine similarity；越相似，越可能是带偏数据\nprobe direction：坏行为在 activation space 里的方向\n高相似训练样本：训练时把模型往这个方向推过"
+  },
+  {
+    "slide": 22,
+    "text": "Data Attribution  语义信号组合\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n\n\n组合方案\nData Attribution  语义信号组合\n\n\nIs Data Shapley Not Better than Random in Data Selection? Ask NASH\n不直接用一个 Data Shapley 分数选数据\n先把 utility 拆成多个 Shapley-informative components，再非线性合成 NASH 分数\ncomponent：能解释一部分数据交互的小目标\nNASH：把这些小目标重新组合，用来更稳地做数据选择\nData Shapley 是单点评分；NASH 是基于 Shapley 的分项覆盖式选人。\n前者关心“这个样本总体值不值钱”，\n后者关心“这个样本能不能补当前没覆盖好的那部分”。"
+  },
+  {
+    "slide": 23,
+    "text": "\n为什么它可能 work\nData Attribution Research\nTrajectory-Aware Attribution\n\n\n2\n\n\n研究内容\n数据组会改变行为曲线，当且仅当它在轨迹中留下可测作用\n\n\n关键原则：不假设每组数据都有影响，而是用 checkpoint 曲线和反事实干预筛出有效数据组。\n\n\n\n主图：trajectory effect 何时可测\n\n\n\n把图读成四个判断条件\nNull hypothesis\n删掉某组数据后，行为曲线可能不分叉；它可能是冗余、无关，或被后续训练补偿。\n\n\n\n数据簇效应\n同向重复更新\n\n\nprobe 对齐\n探针抓住行为\n\n\n高杠杆阶段\n偏好阶段集中\n\n\n反事实分叉\n曲线明显分离\n·\n为什么 work：不是看单个样本像不像输出，而是看数据组是否在曲线中留下方向、时间和反事实证据。\n机制页：图给出证据形状，右侧文字说明何时能归因、何时应该接受 null hypothesis。"
+  },
+  {
+    "slide": 24,
+    "text": "组合到极限 → 领域的影响 → Data Mixture\nData Attribution Research\nData-Effect Trajectory Attribution\n\n\n四篇论文 → 四个组合维度 → 同一个终点：理解训练数据的组合效应，就是理解 Data Mixture。\n12\n\n研究内容\n\n当组合归因推进到极限，得到的就是领域级归因\n\n\n数百万样本的行为原子聚合成数十个能力域时，领域级归因会告诉我们：数据领域比例如何决定模型能力分布。\n\n\nLevel 1：个体归因\nTracIn / IF / TRAK\n每条数据 → 一个分数\n粒度：单样本\n→\n\n\nLevel 2：组合归因\nAtoms / Probe / SDI\n数据群 → 行为模式 / 推理轨迹\n粒度：行为原子 / 推理步骤\n→\n\n\nLevel 3：领域归因\n组合 → 极限 → 领域\n数据领域 → 模型能力分布\n粒度：Data Mixture\n\n\n核心论点\n个体样本（N = 数百万）→ 行为原子/聚类（K = 数十）→ 领域/能力域（D = 数十个）→ Data Mixture。\n30% 代码 + 20% 数学 + 15% 对话 + … 的配比决定模型的全局行为。"
+  },
+  {
+    "slide": 25,
+    "text": "\n\n\n\nPART 03\n重写data mixture范式\n从domain划分到权重优化，再到尺度外推的重新审视"
+  },
+  {
+    "slide": 26,
+    "text": "\n\n\nData Mixture Research\nMainline of the Talk\n\n\ndomain 真的是先验给定的吗？\n旧前提：先按 web / code / wiki 这类 source label 切分语料。\n新方法：重新定义 mixing unit：domain 可以从表示空间中学习出来。\nmixture optimization 真的只是调权重吗？\n旧前提：只要在低维 λ 空间里搜索最优配比就足够。\n新方法：重写 optimization space：由 specialist 定义结构化 reference，再在其上优化。\n小模型上的 recipe 真能平滑外推吗？\n旧前提：mixture 效果会随 ratio 和 model size 平滑变化，因此可以稳定外推。\n新方法：反思 recipe transfer：知识获取可能存在临界比例与相变。\nData Mixture 的经典研究范式，正在被逐层改写\n\nChallenge 1\n\nChallenge 2\n\nChallenge 3\n\n\nData Mixture 的经典研究范式：先把数据集按先验 domain 分类，再调一组 mixtrue weights，最后将小模型上的结果外推到大模型\n26"
+  },
+  {
+    "slide": 27,
+    "text": "Domain is learnable\nData Mixture Research\nLearned Domain for Mixture\n\n\n\n\n研究问题\nmixture 的基本单元 “domain” 到底该怎么定义？\n\n\n先从表征空间中发现结构，再讨论 data mixture\n\n\n问题：手工 domain 为什么不行\n许多现有 mixture 方法默认：\n• 语料先被切成 web / code / math / wiki 这样的来源桶。\n• 这些来源标签默认成稳定、足够有用的 domain 划分。\n• 但实际上，同一来源内部常混有不同能力，并不天然对应单类任务。\n\n\nmanual labels vs learned structure\n\nHand-crafted\ndomain\n直接给数据来源标签\n\n\n\n\nweb\ncode\nwiki\nLearned structure from feature space\n先投影，再聚类，再把聚类结构当作 domain 单元\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncluster A\n\n\n\n\n\ncluster B\n\n\n\n\n\ncluster C\n\n\n\n\n\ncluster D\ndomain 是表征空间里学出来的结构单元。\n27"
+  },
+  {
+    "slide": 28,
+    "text": "\n\n\nFrom feature space to learnable domains\nData Mixture Research\nLearned Domain for Mixture\n\n\n\n\n相关论文\nNemotron-CLIMB (NIPS-2025)\n\n文本样本\n表征空间\n聚类结构\n服务 mixture\n→\n→\n→\n1. 先把大规模语料做嵌入表示，再在嵌入空间中聚类，得到一组语义cluster\n2. 在这些 cluster 上采样候选 mixture，训练小 proxy model，得到“mixture -> 性能”的样本\n3. 用 mixture 配置作为输入，performance 作为输出，训练 predictor；然后逐轮剪枝、重采样、细化搜索空间；最后基于 predictor 预测最优的 mixture\n28"
+  },
+  {
+    "slide": 29,
+    "text": "\n\n\nFrom feature space to learnable domains\nData Mixture Research\nLearned Domain for Mixture\n\n\n\n\n相关论文\nDoGraph (arXiv-2026)\n\n文本样本\n表征空间\n聚类结构\n服务 mixture\n→\n→\n→\n\n29"
+  },
+  {
+    "slide": 30,
+    "text": "Comparison and Conclusion\nData Mixture Research\nLearned Domain for Mixture\n\n\n\n\ndata mixture 的第一步不一定是调比例，而是重新定义可被调配的基本单元。\n\n维度\n\nCLIMB\n\nDoGraph\n\ndomain 来源\n\nembedding / 语义空间聚类\n\n梯度聚类\n\ndomain 含义\n\ndata-induced latent cluster\n\nmodel-centric training signal cluster\n\n是否动态\n\n静态：先聚类，再做 mixture search\n\n动态：训练中反复按梯度结构重建 domain\n\n主要用途\n\n把学到的 domain 当作 mixture component\n\n把学到的 domain 当作梯度重加权的单元\n\n对人工标签的挑战\n\n人工 source label 可能和数据语义分布不一致\n\n人工 source label 可能和模型内部感知不一致\n\n\n\n\n文本样本\n表征空间\n聚类结构\n服务 mixture\n→\n→\n→\n\n\n论文共同点\n\n反对把人工 source label 当成天然正确的 mixture unit\n\n把 data mixture 问题前移了一步，先问“什么才是真正的 domain 单元”\n\n说明 learned domain 的价值是让 mixture optimization 的坐标系更接近真实训练结构。\n30"
+  },
+  {
+    "slide": 31,
+    "text": "Mixture weights are too coarse\nData Mixture Research\nSpecialist-Structured Space\n\n\n\n\n研究问题\ndata mixture 只是一个低维的权重搜索问题吗？\n\n\n不只要关注每个 source 该分多少权重，更要关注这些权重背后究竟对应什么能力差异、什么优化目标。\n\n\n\n旧视角：直接优化 mixture weights\n把数据配方写成一个低维权重向量\nλ = [λ₁, λ₂, λ₃, ...]\n默认假设：每个 source 的作用，都能被一个 weight 表示\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\nweight\nsource\n\n问题\n• 权重只是坐标\n• 不显式刻画 source 行为\n• 难以刻画 source 之间的隐式关系\n\n\nmixture 权重只是坐标，不是“机制”\n\n\n\n新视角：由 specialist 定义结构化优化空间\n\ndomain data\n→\n\ntrain specialists\n→\n\nstructured reference\n→\n让 specialist 把“这个 source 对目标任务的影响”显式化\n后续优化要看 specialist 所定义的行为差异、性能边界与任务缺口。\n\n由 specialist 诱导出来的结构化空间\n\n\n\n\n\n\n\n\n\n\n\n可以是 expert behavior、specialist frontier、相对缺口等 reference。\n\n\n把低维配比优化改写成由 specialist 支撑的结构化优化问题。\n\noptimize\n31"
+  },
+  {
+    "slide": 32,
+    "text": "\noptimize mixture\nSpecialists define the missing structure\nData Mixture Research\nSpecialist-Structured Space\n\n\n\n\n相关论文\nMixture of Data Experts (ACL-2025)\n\ntask / domain data\n→\n\ntrain specialists\n→\n\nstructured reference\n→\n32"
+  },
+  {
+    "slide": 33,
+    "text": "\noptimize mixture\nSpecialists define the missing structure\nData Mixture Research\nSpecialist-Structured Space\n\n\n\n\n相关论文\nAutoMixAlign (ACL-2025)\n\ntask / domain data\n→\n\ntrain specialists\n→\n\nstructured reference\n→\n1. 每个 task dataset 单独训练一个 specialist；\n2. 在每个任务的验证集上分别计算 specialist loss ，作为每个任务的 loss “下界”\n3. 用混合数据训练 generalist ，并以 specialist loss 为参照，定义 excess loss。进一步将问题转化为一个 minimax optimization 问题：adversary 更新权重，把权重压到当前最弱的任务上；generalist 在训练过程中更新模型，最小化 excess losses 权重和\n33"
+  },
+  {
+    "slide": 34,
+    "text": "Comparison and Conclusion\nData Mixture Research\nLearned Domain for Mixture\n\n\n\n\n将优化空间从低维的权重空间，提升到由 specialist 定义的结构化空间。\n\n维度\n\nMDE\n\nAutoMixAlign\n\n论文场景\n\npre-training\n\npost-training\n(preference data)\n\nspecialist 含义\n\n一个 source domain 的 token-level 行为预测器\n\n一个任务的 performance frontier 预测器\n\nspecialist 作用\n\n预测 unseen mixture loss\n\n定义 generalist 与任务最优水平之间的 excess loss\n\n是否动态\n\n静态：先预测最优 mixture，再训练模型\n\n动态：训练过程中持续调整任务权重或采样概率\n\n对“只搜权重”的挑战\n\n只靠权重不能预测 mixture 产生的复杂行为\n\n只靠权重不能判断模型还差哪些能力\n\n\n论文共同点\n\n认为原始 mixture weights 太粗，不能表达数据源或任务的真实训练作用\n\noptimize mixture\n\ntask / domain data\n→\n\ntrain specialists\n→\n\nstructured reference\n→\n\n把 data mixture 从“直接调比例”改写成“先构造结构化 reference，再优化 generalist”\n\n让优化对象从 scalar weights 进入一个更有语义的空间。\n34"
+  },
+  {
+    "slide": 35,
+    "text": "Mixture learning is not smooth\nData Mixture Research\nPhase Transition in Mixture\n\n\n\n\n研究问题\ndata mixture 真的是一个“连续调配比”的平滑优化问题吗？\n\n\n不只要关注当前的最优配比，更要关注模型能力随 model size 和 mixing ratio 变化的规律\n\n\n\n背景与旧直觉\n常见直觉：\n• 模型知识获取对 mixing ratio 和 model size 的响应大致符合比较平滑的 scaling law\n• 小模型上测出来的最优 recipe，能外推到大模型\n\n最新反例\n在混入web数据的情况下，知识获取对 mixing ratio 和 model size 的响应是突变的\n\n\n\nmodel size 和 mixing ratio 的双重阈值\n• 固定 mixing ratio，看 model size：性能可能先长期接近 0，过阈值后突然跃升。\n• 固定 model size，看 mixing ratio：性能也可能先几乎不动，超过临界比例后才快速上升。\n• 因此 data mixture 的问题，要关注“有没有进到可学习区间”。\n35"
+  },
+  {
+    "slide": 36,
+    "text": "Capacity creates the threshold\nData Mixture Research\nLearned Domain for Mixture\n\n\n\n\n相关论文\nData Mixing Can Induce Phase Transitions in Knowledge Acquisition (NIPS-2025)\n\n几乎学不到知识\n\n小模型data mixture\n→\n\n容量竞争\n→\n\n边际价值不足\n→\n36"
+  },
+  {
+    "slide": 37,
+    "text": "Conclusion\nData Mixture Research\nLearned Domain for Mixture\n\n\n\n\n在 data mixture 场景下，先跨过临界比例，知识才开始被真正学习。\n\nAutoMixAlign\n\n\n论文主实验\n\nmixture optimization 的阈值也是可预测的\n\n\n论文主要结论\n\n结论 1\nknowledge acquisition 在 mixed data 上不一定遵循 smooth scaling\n\n结论 2\n存在 critical mixing ratio 和 critical model size，而不是一条平滑改进曲线\n\n结论 3\n当 r 低于阈值时，单纯增加训练 tokens 可能几乎没有帮助\n\n结论 4\n临界比例与模型规模之间还存在可预测关系，而不是完全经验性的 recipe\n37\n\n\n相关论文\nData Mixing Can Induce Phase Transitions in Knowledge Acquisition (NIPS-2025)"
+  },
+  {
+    "slide": 38,
+    "text": "Data Mixture 的三重重写\nData Mixture Research\nMainline of the Talk\n\n\n\n\n总结\n单元定义、优化空间与尺度外推，正在从经验式、启发式 view 走向更深层的 insight\n\n\n\nRewrite 1\n单元定义被重写\n旧图景：先按先验 source / domain label 切分数据。\n新图景：先投影到表示空间，再从结构中学习出更有意义的 mixing unit。\n\n\n\nRewrite 2\n优化空间被重写\n旧图景：只在低维 λ 空间里搜索最优配比。\n新图景：借助 specialist 显式表达 behavior、frontier 与 gap，再在结构化空间上优化。\n\n\n\nRewrite 3\n尺度外推被重写\n旧图景：小模型上的 recipe 可以平滑迁移到更大尺度。\n新图景：knowledge acquisition 可能先被临界比例锁住，跨过阈值后才真正开始学习。\n\n\n\n→\n→\n按先验 domain 分类数据集\n直接优化 mixture weights\n模型尺度外推\n38"
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "scope": "synthetic CPU experiments only",
+  "sft": {
+    "atoms_frontier": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7196561892827352,
+        0.6966735124588013
+      ],
+      "std_test_bce": [
+        0.025871222254279264,
+        0.030157173074755825
+      ],
+      "mean_elapsed_seconds": 0.35438551966664517
+    },
+    "frontier": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7196561892827352,
+        0.6966735124588013
+      ],
+      "std_test_bce": [
+        0.025871222254279264,
+        0.030157173074755825
+      ],
+      "mean_elapsed_seconds": 0.20204294233334016
+    },
+    "scalar": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7251107096672058,
+        0.6981261173884074
+      ],
+      "std_test_bce": [
+        0.03890177009697336,
+        0.032832612744248486
+      ],
+      "mean_elapsed_seconds": 0.1382342396666445
+    },
+    "uniform": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_test_bce": [
+        0.7083544731140137,
+        0.6901016036669413
+      ],
+      "std_test_bce": [
+        0.01662154965524485,
+        0.02206367966318598
+      ],
+      "mean_elapsed_seconds": 0.027697671999969014
+    }
+  },
+  "rl": {
+    "base_prompt": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_reward": [
+        0.5292891403767465,
+        0.5461600131911329
+      ],
+      "std_reward": [
+        0.005031963116026831,
+        0.0016714865062578553
+      ],
+      "rollouts_per_run": 3840
+    },
+    "variance_prompt": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_reward": [
+        0.5297752180371509,
+        0.5462420860058588
+      ],
+      "std_reward": [
+        0.005175296280551016,
+        0.002982387746867423
+      ],
+      "rollouts_per_run": 3840
+    }
+  },
+  "decision": {
+    "sft_frontier_better_all_objectives": false,
+    "real_llm_tested": false,
+    "real_recommendation_benchmark_tested": false,
+    "atoms_effect": "same solution as full LP in delivered experiment; additional overhead",
+    "conclusion": "do not approve empirical effectiveness from these experiments"
+  }
+}

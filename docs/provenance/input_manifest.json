@@ -1,0 +1,11 @@
+{
+  "ppt_file": "DataAttribution&Mixing.pptx",
+  "ppt_sha256": "5310f528626b597e9e63e146119531ee23df32ae5478accd5b8f6b0334f11833",
+  "slides": 38,
+  "research_repository": "https://github.com/YWDDLiang/Research",
+  "research_commit": "299bd85752ce1a59ea5cce8c1b145777e33cba6f",
+  "rec_repository": "https://github.com/YWDDLiang/rec",
+  "rec_initial_state": "empty; confirmed via GitHub connector",
+  "checked_at": "2026-09-05",
+  "network_note": "Container git clone failed DNS; source reads performed via GitHub connector and web. No upstream code cloned or executed."
+}
