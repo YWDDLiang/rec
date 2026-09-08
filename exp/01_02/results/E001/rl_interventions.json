@@ -1,0 +1,994 @@
+{
+  "complete": true,
+  "phase": "rl",
+  "experiment": "E001",
+  "test_evaluated": false,
+  "before": {
+    "rec": 3.021026385948062,
+    "ground": 3.0681605748832226
+  },
+  "baseline_reload_max_error": {
+    "rec": 0.0,
+    "ground": 0.0
+  },
+  "conditions": [
+    {
+      "condition": "uniform",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 5.081347262603231e-05,
+      "audit": {
+        "rec": {
+          "mean_gain": -7.443875074386597e-05,
+          "n": 512,
+          "interval_95": [
+            -8.10755998827517e-05,
+            -6.783681455999613e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -4.2696017771959305e-05,
+          "n": 512,
+          "interval_95": [
+            -4.6845921315252784e-05,
+            -3.853467060253024e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -2.617246416823685e-05,
+        -1.4369542920307127e-05
+      ],
+      "effective_sample_size": 256.0,
+      "rec_mass": 0.5,
+      "seconds": 10.983559017069638
+    },
+    {
+      "condition": "atoms_uniform",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.00012883017188869417,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.0001449049450457096,
+          "n": 512,
+          "interval_95": [
+            -0.00015926489140838385,
+            -0.00013037297176197172
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -7.636239752173424e-05,
+          "n": 512,
+          "interval_95": [
+            -8.559625130146741e-05,
+            -6.680967053398491e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -5.014059788907062e-05,
+        -2.343207428116662e-05
+      ],
+      "effective_sample_size": 140.8886330575505,
+      "rec_mass": 0.5137123161857592,
+      "seconds": 10.853246813639998
+    },
+    {
+      "condition": "atoms_optimized",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.00022778038692194968,
+      "audit": {
+        "rec": {
+          "mean_gain": 2.2076070308685303e-05,
+          "n": 512,
+          "interval_95": [
+            1.062427181750536e-05,
+            3.3860409166663886e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 4.387693479657173e-05,
+          "n": 512,
+          "interval_95": [
+            2.7878477703779934e-05,
+            6.015821127220988e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        7.523410888212376e-06,
+        2.200752176516183e-05
+      ],
+      "effective_sample_size": 35.718720899179694,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.73047644738108
+    },
+    {
+      "condition": "atoms_AB",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.00022778038692194968,
+      "audit": {
+        "rec": {
+          "mean_gain": 2.2076070308685303e-05,
+          "n": 512,
+          "interval_95": [
+            1.062427181750536e-05,
+            3.3860409166663886e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 4.387693479657173e-05,
+          "n": 512,
+          "interval_95": [
+            2.7878477703779934e-05,
+            6.015821127220988e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        7.523410888212376e-06,
+        2.200752176516183e-05
+      ],
+      "effective_sample_size": 35.718720899179694,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.880915981717408
+    },
+    {
+      "condition": "atoms_A",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.00042687010136432946,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.000310585368424654,
+          "n": 512,
+          "interval_95": [
+            -0.0003606889862567186,
+            -0.0002637059194967151
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.00013262219727039337,
+          "n": 512,
+          "interval_95": [
+            -0.00015212832950055598,
+            -0.00011256667785346508
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -0.00011515140543179463,
+        -4.569539695211903e-05
+      ],
+      "effective_sample_size": 11.346153592709086,
+      "rec_mass": 0.7191380447947517,
+      "seconds": 11.092239988036454
+    },
+    {
+      "condition": "atoms_B",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.00022778038692194968,
+      "audit": {
+        "rec": {
+          "mean_gain": 2.2076070308685303e-05,
+          "n": 512,
+          "interval_95": [
+            1.062427181750536e-05,
+            3.3860409166663886e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 4.387693479657173e-05,
+          "n": 512,
+          "interval_95": [
+            2.7878477703779934e-05,
+            6.015821127220988e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        7.523410888212376e-06,
+        2.200752176516183e-05
+      ],
+      "effective_sample_size": 35.718720899179694,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.803395167924464
+    },
+    {
+      "condition": "atoms_AB_matched",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.0001433229772374034,
+      "audit": {
+        "rec": {
+          "mean_gain": -6.503891199827194e-06,
+          "n": 512,
+          "interval_95": [
+            -1.5250593423843384e-05,
+            3.897759597748515e-06
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 9.519513696432114e-06,
+          "n": 512,
+          "interval_95": [
+            8.368398994207383e-07,
+            1.8352293409407135e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        1.172678138643378e-06,
+        9.693079557701344e-06
+      ],
+      "effective_sample_size": 55.12147967959735,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.918392577208579
+    },
+    {
+      "condition": "random_atoms_AB",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.0002755242749117315,
+      "audit": {
+        "rec": {
+          "mean_gain": 1.6381964087486267e-05,
+          "n": 512,
+          "interval_95": [
+            -7.252558134496212e-06,
+            4.628081806004047e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 1.9647181034088135e-05,
+          "n": 512,
+          "interval_95": [
+            6.338709499686956e-06,
+            3.288167063146829e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        4.830043383352667e-06,
+        4.83004338335267e-06
+      ],
+      "effective_sample_size": 28.53101873497705,
+      "rec_mass": 0.42965172129109924,
+      "seconds": 10.903608079999685
+    },
+    {
+      "condition": "tasks_AB",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 6.370498158503324e-05,
+      "audit": {
+        "rec": {
+          "mean_gain": -1.950794830918312e-05,
+          "n": 512,
+          "interval_95": [
+            -2.3593741934746505e-05,
+            -1.5436671674251563e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -3.290735185146332e-05,
+          "n": 512,
+          "interval_95": [
+            -3.7954922299832104e-05,
+            -2.7882913127541545e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -4.6657898905509575e-06,
+        -1.1609070637891461e-05
+      ],
+      "effective_sample_size": 128.0,
+      "rec_mass": 0.0,
+      "seconds": 10.913793300278485
+    },
+    {
+      "condition": "raw_pool_optimized",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.0013551793526858091,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0006123105995357037,
+          "n": 512,
+          "interval_95": [
+            0.0005387981655076146,
+            0.0006887740921229123
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 0.000638308934867382,
+          "n": 512,
+          "interval_95": [
+            0.0005574116483330726,
+            0.0007199601386673748
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        0.00023524651990279772,
+        0.00023524651990279772
+      ],
+      "effective_sample_size": 1.4507092680517393,
+      "rec_mass": 0.0,
+      "seconds": 10.831974491477013
+    },
+    {
+      "condition": "transfer_atoms_A",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 8.989970956463367e-05,
+      "audit": {
+        "rec": {
+          "mean_gain": -3.37786041200161e-05,
+          "n": 512,
+          "interval_95": [
+            -4.28127939812839e-05,
+            -2.452116459608078e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -1.798989251255989e-05,
+          "n": 512,
+          "interval_95": [
+            -2.1595985163003207e-05,
+            -1.4380377251654865e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -1.6283727580701118e-05,
+        -5.0257932639304556e-06
+      ],
+      "effective_sample_size": 14.545340006667978,
+      "rec_mass": 0.880143421899537,
+      "seconds": 10.951214048080146
+    },
+    {
+      "condition": "transfer_atoms_B",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 0.00010820056922966614,
+      "audit": {
+        "rec": {
+          "mean_gain": -4.6160537749528885e-05,
+          "n": 512,
+          "interval_95": [
+            -5.685705691576004e-05,
+            -3.567051608115435e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -2.4813227355480194e-05,
+          "n": 512,
+          "interval_95": [
+            -3.16037330776453e-05,
+            -1.772219548001886e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -1.8688491614150963e-05,
+        -1.272643034680501e-05
+      ],
+      "effective_sample_size": 23.796475260419786,
+      "rec_mass": 0.4316208867866149,
+      "seconds": 10.944087961688638
+    },
+    {
+      "condition": "transfer_atoms_AB",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 8.568696648580953e-05,
+      "audit": {
+        "rec": {
+          "mean_gain": -4.2154453694820404e-05,
+          "n": 512,
+          "interval_95": [
+            -5.094180814921856e-05,
+            -3.304969286546111e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -2.293940633535385e-05,
+          "n": 512,
+          "interval_95": [
+            -2.8313766233623027e-05,
+            -1.7643265891820192e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -1.7940039854825208e-05,
+        -1.032970647184822e-05
+      ],
+      "effective_sample_size": 35.317179538181406,
+      "rec_mass": 0.5712177353060631,
+      "seconds": 10.82891746610403
+    },
+    {
+      "condition": "transfer_atoms_AB_matched",
+      "step_norm_ceiling": 0.01,
+      "step_size": 0.0001511626668944862,
+      "actual_update_norm": 7.726136391283944e-05,
+      "audit": {
+        "rec": {
+          "mean_gain": -5.711894482374191e-05,
+          "n": 512,
+          "interval_95": [
+            -6.428869673982262e-05,
+            -5.015989299863577e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -3.2788608223199844e-05,
+          "n": 512,
+          "interval_95": [
+            -3.7608679849654433e-05,
+            -2.8090714477002623e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -2.1812764620988175e-05,
+        -1.3366288257658447e-05
+      ],
+      "effective_sample_size": 74.35901539486882,
+      "rec_mass": 0.5712177353060632,
+      "seconds": 10.943107306957245
+    },
+    {
+      "condition": "uniform",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.00025393234682269394,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.00037164101377129555,
+          "n": 512,
+          "interval_95": [
+            -0.00040460880845785143,
+            -0.00033896489767357705
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.00021316856145858765,
+          "n": 512,
+          "interval_95": [
+            -0.00023357976460829376,
+            -0.0001926896977238357
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -0.00013086232084118425,
+        -7.184771460153564e-05
+      ],
+      "effective_sample_size": 256.0,
+      "rec_mass": 0.5,
+      "seconds": 11.01290338486433
+    },
+    {
+      "condition": "atoms_uniform",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0006441025179810822,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.0007233233191072941,
+          "n": 512,
+          "interval_95": [
+            -0.0007945919875055552,
+            -0.0006509420461952687
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.00038173235952854156,
+          "n": 512,
+          "interval_95": [
+            -0.0004270140896551311,
+            -0.00033444163855165246
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -0.00025070298944535307,
+        -0.0001171603714058331
+      ],
+      "effective_sample_size": 140.8886330575505,
+      "rec_mass": 0.5137123161857592,
+      "seconds": 10.918144651688635
+    },
+    {
+      "condition": "atoms_optimized",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0011388823622837663,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.00011012190952897072,
+          "n": 512,
+          "interval_95": [
+            5.2882335148751734e-05,
+            0.00016904239309951661
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 0.00021899491548538208,
+          "n": 512,
+          "interval_95": [
+            0.00014016947243362666,
+            0.00030011688359081744
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        3.761705444106188e-05,
+        0.00011003760882580915
+      ],
+      "effective_sample_size": 35.718720899179694,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.818341802805662
+    },
+    {
+      "condition": "atoms_AB",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0011388823622837663,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.00011012190952897072,
+          "n": 512,
+          "interval_95": [
+            5.2882335148751734e-05,
+            0.00016904239309951661
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 0.00021899491548538208,
+          "n": 512,
+          "interval_95": [
+            0.00014016947243362666,
+            0.00030011688359081744
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        3.761705444106188e-05,
+        0.00011003760882580915
+      ],
+      "effective_sample_size": 35.718720899179694,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.955601651221514
+    },
+    {
+      "condition": "atoms_A",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0021343419793993235,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.0015550395473837852,
+          "n": 512,
+          "interval_95": [
+            -0.0018020077957771718,
+            -0.0013220090069808066
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.0006640423089265823,
+          "n": 512,
+          "interval_95": [
+            -0.0007619294803589583,
+            -0.0005650918930768967
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -0.0005757570271589732,
+        -0.00022847698476059514
+      ],
+      "effective_sample_size": 11.346153592709086,
+      "rec_mass": 0.7191380447947517,
+      "seconds": 10.95960250031203
+    },
+    {
+      "condition": "atoms_B",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0011388823622837663,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.00011012190952897072,
+          "n": 512,
+          "interval_95": [
+            5.2882335148751734e-05,
+            0.00016904239309951661
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 0.00021899491548538208,
+          "n": 512,
+          "interval_95": [
+            0.00014016947243362666,
+            0.00030011688359081744
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        3.761705444106188e-05,
+        0.00011003760882580915
+      ],
+      "effective_sample_size": 35.718720899179694,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.80966505408287
+    },
+    {
+      "condition": "atoms_AB_matched",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0007165757706388831,
+      "audit": {
+        "rec": {
+          "mean_gain": -3.174040466547012e-05,
+          "n": 512,
+          "interval_95": [
+            -7.52042280510068e-05,
+            2.09492049179971e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 4.603154957294464e-05,
+          "n": 512,
+          "interval_95": [
+            2.5811255909502507e-06,
+            9.011188521981235e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        5.863390693216889e-06,
+        4.8465397788506715e-05
+      ],
+      "effective_sample_size": 55.12147967959735,
+      "rec_mass": 0.49258162613417156,
+      "seconds": 10.885575634427369
+    },
+    {
+      "condition": "random_atoms_AB",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0013776083942502737,
+      "audit": {
+        "rec": {
+          "mean_gain": 8.436385542154312e-05,
+          "n": 512,
+          "interval_95": [
+            -3.3315562177449465e-05,
+            0.0002315884688869118
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 9.794533252716064e-05,
+          "n": 512,
+          "interval_95": [
+            3.1624920666217804e-05,
+            0.00016321053262799973
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        2.4150216916763337e-05,
+        2.4150216916763347e-05
+      ],
+      "effective_sample_size": 28.53101873497705,
+      "rec_mass": 0.42965172129109924,
+      "seconds": 10.982624221593142
+    },
+    {
+      "condition": "tasks_AB",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0003184756787959486,
+      "audit": {
+        "rec": {
+          "mean_gain": -9.536603465676308e-05,
+          "n": 512,
+          "interval_95": [
+            -0.00011554914526641369,
+            -7.540002698078752e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.00016586016863584518,
+          "n": 512,
+          "interval_95": [
+            -0.0001910415943711996,
+            -0.00014093517092987894
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -2.3328949452754787e-05,
+        -5.8045353189457306e-05
+      ],
+      "effective_sample_size": 128.0,
+      "rec_mass": 0.0,
+      "seconds": 10.885909715667367
+    },
+    {
+      "condition": "raw_pool_optimized",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.00677589513361454,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0030501242727041245,
+          "n": 512,
+          "interval_95": [
+            0.00268659635912627,
+            0.003435516625177115
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": 0.0031900093890726566,
+          "n": 512,
+          "interval_95": [
+            0.002786063903477043,
+            0.003598554735071957
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        0.0011762325995139885,
+        0.0011762325995139885
+      ],
+      "effective_sample_size": 1.4507092680517393,
+      "rec_mass": 0.0,
+      "seconds": 10.804474626667798
+    },
+    {
+      "condition": "transfer_atoms_A",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.00044946916750632226,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.00016940059140324593,
+          "n": 512,
+          "interval_95": [
+            -0.00021468164632096887,
+            -0.00012355450307950379
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -9.021582081913948e-05,
+          "n": 512,
+          "interval_95": [
+            -0.00010796781862154603,
+            -7.289103232324124e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -8.141863790350558e-05,
+        -2.5128966319652277e-05
+      ],
+      "effective_sample_size": 14.545340006667978,
+      "rec_mass": 0.880143421899537,
+      "seconds": 10.947516301646829
+    },
+    {
+      "condition": "transfer_atoms_B",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0005409762961789966,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.00022917753085494041,
+          "n": 512,
+          "interval_95": [
+            -0.0002823148854076862,
+            -0.00017674955306574703
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.00012553110718727112,
+          "n": 512,
+          "interval_95": [
+            -0.0001593919936567545,
+            -9.007868357002735e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -9.344245807075481e-05,
+        -6.363215173402505e-05
+      ],
+      "effective_sample_size": 23.796475260419786,
+      "rec_mass": 0.4316208867866149,
+      "seconds": 10.889968316070735
+    },
+    {
+      "condition": "transfer_atoms_AB",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.00042840506648644805,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.00021055294200778008,
+          "n": 512,
+          "interval_95": [
+            -0.0002545322058722377,
+            -0.00016544344834983348
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.00011458341032266617,
+          "n": 512,
+          "interval_95": [
+            -0.00014056547079235315,
+            -8.833950851112607e-05
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -8.970019927412603e-05,
+        -5.16485323592411e-05
+      ],
+      "effective_sample_size": 35.317179538181406,
+      "rec_mass": 0.5712177353060631,
+      "seconds": 10.82367851305753
+    },
+    {
+      "condition": "transfer_atoms_AB_matched",
+      "step_norm_ceiling": 0.05,
+      "step_size": 0.000755813334472431,
+      "actual_update_norm": 0.0003862468583974987,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.0002827737480401993,
+          "n": 512,
+          "interval_95": [
+            -0.0003184818895533681,
+            -0.00024842454586178065
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        },
+        "ground": {
+          "mean_gain": -0.00016613630577921867,
+          "n": 512,
+          "interval_95": [
+            -0.00018971932586282493,
+            -0.0001428085146471858
+          ],
+          "scope": "descriptive paired development bootstrap; not a final-test claim"
+        }
+      },
+      "predicted_scaled_gain": [
+        -0.00010906382310494088,
+        -6.683144128829224e-05
+      ],
+      "effective_sample_size": 74.35901539486882,
+      "rec_mass": 0.5712177353060632,
+      "seconds": 10.913577009923756
+    }
+  ],
+  "choices_sha256": "f6ad48db14b264cc6c3b58a6e26677272b99ac19d9a1170086a7c23592d73c7c",
+  "config": {
+    "experiment_id": "E001",
+    "version": 1,
+    "purpose": "Signed atom mixing units and A/B/A+B interventions in SFT and complete-group RL",
+    "model": "/zhdd/home/ywliang/models/Qwen3-1.7B",
+    "adapter": "runs/rec_atom_long_uniform/checkpoints/step_003500/adapter",
+    "data": "data/processed/beauty_atom",
+    "seed": 8041,
+    "model_seed": 2026,
+    "diagnostic_dtype": "float32",
+    "allow_tf32": false,
+    "policy_logp_tolerance": 0.001,
+    "fit_records_per_task": 192,
+    "candidate_records_per_task": 128,
+    "reference_records_per_task": 128,
+    "audit_rec_records": 512,
+    "audit_ground_records": 512,
+    "sketch_dimension": 256,
+    "atoms": 12,
+    "sparsity": 3,
+    "dictionary_iterations": 8,
+    "minimum_unit_records": 8,
+    "minimum_unit_ess": 6.0,
+    "max_length": 256,
+    "rl_group_size": 8,
+    "rl_group_replicates": 2,
+    "rl_temperature": 1.0,
+    "rl_reward": "exact benchmark target match",
+    "rl_advantage": "leave-one-out within complete groups",
+    "generation_prompt_batch": 4,
+    "gradient_microbatch": 8,
+    "intervention_step_norm_ceilings": [
+      0.01,
+      0.05
+    ],
+    "bootstrap_replicates": 2000,
+    "primary_step_norm_ceiling": 0.05,
+    "phase_gpus": {
+      "sft": 2,
+      "rl": 3
+    },
+    "run_root": "runs/01_02/E001",
+    "result_root": "results/01_02/E001",
+    "same_pair_transfer": "Freeze SFT membership distributions and selected mixture coefficient; apply to RL gradients without reselection.",
+    "cost_claim": "Full-gradient scanning for diagnostics; not a data- or compute-efficiency result.",
+    "final_test_evaluated": false
+  },
+  "restored_max_loss_error": {
+    "rec": 0.0,
+    "ground": 0.0
+  },
+  "parameters_restored": true,
+  "seconds": 316.42269856482744
+}

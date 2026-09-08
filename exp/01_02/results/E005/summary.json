@@ -1,0 +1,191 @@
+{
+  "experiment": "E005",
+  "complete": true,
+  "runs": {
+    "single_office": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E005/execution_v2/rec_atom_single_office/checkpoints/step_001600/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.16796875,
+          "ndcg@10": 0.1370231794968858,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.00390625,
+          "ndcg@10": 0.0011791141911036429,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 1260.8466015215963,
+      "training_step_seconds": 1050.5391213158146,
+      "training_tokens": {
+        "office": 10629611,
+        "industrial": 0
+      },
+      "sampled_records": {
+        "office": 153600,
+        "industrial": 0
+      }
+    },
+    "single_industrial": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E005/execution_v2/rec_atom_single_industrial/checkpoints/step_000800/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.0026041666666666665,
+          "ndcg@10": 0.001643046233259004,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.1171875,
+          "ndcg@10": 0.08697085462859837,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 1243.200385818258,
+      "training_step_seconds": 1035.070181146264,
+      "training_tokens": {
+        "office": 0,
+        "industrial": 10814144
+      },
+      "sampled_records": {
+        "office": 0,
+        "industrial": 153600
+      }
+    },
+    "joint_uniform": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E005/execution_v2/rec_atom_joint_uniform/checkpoints/step_001600/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.16927083333333334,
+          "ndcg@10": 0.1378179341799064,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.11458333333333333,
+          "ndcg@10": 0.08764846418849292,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 1245.54527570121,
+      "training_step_seconds": 1037.5415548663586,
+      "training_tokens": {
+        "office": 5314433,
+        "industrial": 5408790
+      },
+      "sampled_records": {
+        "office": 76788,
+        "industrial": 76812
+      }
+    },
+    "joint_empirical": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E005/execution_v2/rec_atom_joint_empirical/checkpoints/step_001600/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.16796875,
+          "ndcg@10": 0.13970470126134274,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.11588541666666667,
+          "ndcg@10": 0.08988470920903237,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 1253.7011411273852,
+      "training_step_seconds": 1048.9733560308814,
+      "training_tokens": {
+        "office": 5500867,
+        "industrial": 5218657
+      },
+      "sampled_records": {
+        "office": 79479,
+        "industrial": 74121
+      }
+    }
+  },
+  "joint_minus_own_domain_specialist": {
+    "joint_uniform": {
+      "office": {
+        "ndcg_difference": 0.0007947546830205798,
+        "interval_95": [
+          -0.007822489744669777,
+          0.009337260820583847
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      },
+      "industrial": {
+        "ndcg_difference": 0.0006776095598945757,
+        "interval_95": [
+          -0.00920453965534121,
+          0.010526333583982238
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      }
+    },
+    "joint_empirical": {
+      "office": {
+        "ndcg_difference": 0.0026815217644569167,
+        "interval_95": [
+          -0.0059132233942597616,
+          0.010935718821711567
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      },
+      "industrial": {
+        "ndcg_difference": 0.0029138545804340012,
+        "interval_95": [
+          -0.006297440768341333,
+          0.012540547878197061
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      }
+    }
+  },
+  "single_domain_loss_learned": {
+    "office": true,
+    "industrial": true
+  },
+  "next_stage_decision": "Baseline training is learnable; review joint tradeoffs and start the matched method stage",
+  "final_test_evaluated": false,
+  "automatic_new_training_started": false
+}

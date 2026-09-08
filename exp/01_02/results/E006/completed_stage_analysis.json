@@ -1,0 +1,127 @@
+{
+  "complete": true,
+  "extra_descriptive_comparisons_vs_fixed": {
+    "domain_window": {
+      "office": {
+        "ndcg_difference": -0.0009892568994670835,
+        "interval_95": [
+          -0.007474160679488961,
+          0.005294104702129365
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      },
+      "industrial": {
+        "ndcg_difference": -0.0008747615258144036,
+        "interval_95": [
+          -0.009016202839713897,
+          0.007320804914132189
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      }
+    },
+    "cluster_window": {
+      "office": {
+        "ndcg_difference": -0.00029332999158406854,
+        "interval_95": [
+          -0.006732438635619478,
+          0.005791391756253396
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      },
+      "industrial": {
+        "ndcg_difference": 0.00041404582210336,
+        "interval_95": [
+          -0.007839743371694562,
+          0.008999378460170269
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      }
+    }
+  },
+  "cost": {
+    "fixed": {
+      "train_seconds": 692.514060809277,
+      "selection_seconds": 0.0,
+      "representation_seconds_charged": 0.0,
+      "core_seconds_charged": 692.514060809277,
+      "core_overhead_vs_fixed": 0.0,
+      "elapsed_plus_representation_seconds": 872.2540548443794,
+      "training_tokens": 7146847,
+      "sampled_records": {
+        "office": 51121,
+        "industrial": 51279
+      },
+      "unique_records": 55905,
+      "negative_worst_prediction_windows": null,
+      "windows": 8,
+      "measured_prediction_windows": 0
+    },
+    "domain_window": {
+      "train_seconds": 699.2388293743134,
+      "selection_seconds": 214.70284102391452,
+      "representation_seconds_charged": 0.0,
+      "core_seconds_charged": 913.9416703982279,
+      "core_overhead_vs_fixed": 0.3197445685509821,
+      "elapsed_plus_representation_seconds": 1093.4836893463507,
+      "training_tokens": 7149777,
+      "sampled_records": {
+        "office": 52818,
+        "industrial": 49582
+      },
+      "unique_records": 55990,
+      "negative_worst_prediction_windows": 4,
+      "windows": 8,
+      "measured_prediction_windows": 8
+    },
+    "atoms_window": {
+      "train_seconds": 690.3337464826182,
+      "selection_seconds": 226.23290349263698,
+      "representation_seconds_charged": 235.16295662894845,
+      "core_seconds_charged": 1151.7296066042036,
+      "core_overhead_vs_fixed": 0.6631136778050166,
+      "elapsed_plus_representation_seconds": 1330.0230309730396,
+      "training_tokens": 7162709,
+      "sampled_records": {
+        "office": 51121,
+        "industrial": 51279
+      },
+      "unique_records": 54410,
+      "negative_worst_prediction_windows": 3,
+      "windows": 8,
+      "measured_prediction_windows": 8
+    },
+    "cluster_window": {
+      "train_seconds": 699.4534236723557,
+      "selection_seconds": 228.66037426888943,
+      "representation_seconds_charged": 235.16295662894845,
+      "core_seconds_charged": 1163.2767545701936,
+      "core_overhead_vs_fixed": 0.6797879211445612,
+      "elapsed_plus_representation_seconds": 1342.7027864903212,
+      "training_tokens": 7146546,
+      "sampled_records": {
+        "office": 51121,
+        "industrial": 51279
+      },
+      "unique_records": 55758,
+      "negative_worst_prediction_windows": 4,
+      "windows": 8,
+      "measured_prediction_windows": 8
+    }
+  },
+  "primary_decision": "Current atom configuration failed to improve over the fixed, domain-mixing and ordinary-cluster controls. Keep fixed mixing as the practical baseline; do not expand this configuration into larger runs or RL.",
+  "followup_decision": "Do not prioritize 02-only or confirmatory A/B interventions for this negative configuration. Any future bounded diagnosis should first test held-out group-response prediction and selection bias, before more full training.",
+  "limitations": [
+    "One training seed and development users; paired user intervals do not quantify training-seed variability.",
+    "Fixed-distribution importance-gradient estimates are unbiased over query sampling; maximizing them using the same queried records does not make the selected estimate unbiased.",
+    "No independent second gradient-query batch validated the selected mixture in this run. This is a possible failure mechanism, not an identified cause.",
+    "This implementation uses legal-readout partial-gradient sketches; negative results do not disprove every full-gradient atom method.",
+    "Stage cost excludes the common 800-step initialization and E005 baseline search. Preparation was executed once but is charged to each method requiring it.",
+    "No final-test evaluation or universal multi-domain conflict claim."
+  ],
+  "final_test_evaluated": false,
+  "new_gpu_experiments_started": false
+}

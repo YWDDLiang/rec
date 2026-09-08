@@ -1,0 +1,38 @@
+{
+  "sft": {
+    "posthoc_secondary_only": true,
+    "primary_gate_unchanged": false,
+    "combined_unit_direction_norm": 0.7797574371680402,
+    "equal_final_norm_linear_gap": {
+      "gap": 0.0002765123119244197,
+      "interval_95": [
+        3.736141548632449e-05,
+        0.0006160648805690881
+      ],
+      "mixed_scaled_gains": [
+        0.002495071103230679,
+        0.001841137132626385
+      ],
+      "best_single_index_on_audit": 65,
+      "scope": "Descriptive development bootstrap with frozen choice; audit best is diagnostic, not reselection"
+    }
+  },
+  "rl_expected": {
+    "posthoc_secondary_only": true,
+    "primary_gate_unchanged": false,
+    "combined_unit_direction_norm": 0.7787274742159247,
+    "equal_final_norm_linear_gap": {
+      "gap": -0.00013998312634138548,
+      "interval_95": [
+        -0.0004048991544107517,
+        9.65143508324573e-05
+      ],
+      "mixed_scaled_gains": [
+        0.0006574981170507197,
+        0.00045152707083690553
+      ],
+      "best_single_index_on_audit": 63,
+      "scope": "Descriptive development bootstrap with frozen choice; audit best is diagnostic, not reselection"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "experiment": "E002",
+  "final_test_evaluated": false,
+  "phases": {
+    "sft": {
+      "selection_pair": {
+        "left": 2,
+        "right": 22,
+        "right_fraction": 0.16052133245167327,
+        "left_response": [
+          0.04032520718972169,
+          -0.004097314626828188
+        ],
+        "right_response": [
+          -0.029695828088024526,
+          0.20262070488693604
+        ],
+        "combined_response": [
+          0.02908533730729225,
+          0.02908533730729224
+        ],
+        "margin": 0.02908533730729224,
+        "gain_over_singletons_and_no_update": 0.02908533730729224,
+        "strict_predicted_complementarity": true,
+        "left_name": "atom_1_positive",
+        "right_name": "atom_11_positive"
+      },
+      "own_pair": {
+        "available": true,
+        "AB_both_positive_intervals": false,
+        "A_has_negative_interval": true,
+        "B_has_negative_interval": false,
+        "strict_development_pattern": false
+      },
+      "same_sft_pair": null,
+      "before": {
+        "rec": 3.2301997118629515,
+        "ground": 3.074864165391773
+      },
+      "restoration_error": {
+        "rec": 0.0,
+        "ground": 0.0
+      }
+    },
+    "rl": {
+      "selection_pair": {
+        "left": 0,
+        "right": 5,
+        "right_fraction": 1.0,
+        "left_response": [
+          -0.45715330494255285,
+          -0.30951847129767107
+        ],
+        "right_response": [
+          0.0447992955556608,
+          0.0990065402476239
+        ],
+        "combined_response": [
+          0.04479929555566081,
+          0.0990065402476239
+        ],
+        "margin": 0.04479929555566081,
+        "gain_over_singletons_and_no_update": 1.3877787807814457e-17,
+        "strict_predicted_complementarity": false,
+        "left_name": "atom_0_positive",
+        "right_name": "atom_3_positive"
+      },
+      "own_pair": {
+        "available": true,
+        "AB_both_positive_intervals": true,
+        "A_has_negative_interval": true,
+        "B_has_negative_interval": false,
+        "strict_development_pattern": false
+      },
+      "same_sft_pair": {
+        "available": true,
+        "AB_both_positive_intervals": false,
+        "A_has_negative_interval": true,
+        "B_has_negative_interval": true,
+        "strict_development_pattern": false
+      },
+      "before": {
+        "rec": 3.2301997118629515,
+        "ground": 3.074864165391773
+      },
+      "restoration_error": {
+        "rec": 0.0,
+        "ground": 0.0
+      }
+    }
+  },
+  "primary_step_norm_ceiling": 0.05,
+  "scope": "One restored-state FP32 parameter update; descriptive development evidence, not a ranking-performance or long-training claim"
+}

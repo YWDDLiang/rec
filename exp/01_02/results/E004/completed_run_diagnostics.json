@@ -1,0 +1,61 @@
+{
+  "scope": "Post-hoc descriptive execution audit; no causal attribution or scientific configuration changes",
+  "runs": {
+    "fixed": {
+      "complete": true,
+      "selected_initial": true,
+      "elapsed_seconds": 2407.4874479519203,
+      "training_step_seconds": 1569.612079108134,
+      "selection_seconds": 0.0,
+      "training_and_selection_seconds": 1569.612079108134,
+      "training_tokens": 13620774,
+      "rec_uses": 129555,
+      "unique_rec_positions": 50172,
+      "windows": 19,
+      "absolute_rank_prediction_nonpositive_windows": 0,
+      "ground_prediction_negative_windows": 0,
+      "mean_window_rec_mass": 0.84375,
+      "initial_tuning_ndcg10": 0.02308621856390257,
+      "best_trained_tuning_step": 1800,
+      "best_trained_tuning_ndcg10": 0.022698448367945653
+    },
+    "atoms_window": {
+      "complete": true,
+      "selected_initial": true,
+      "elapsed_seconds": 2527.3940056515858,
+      "training_step_seconds": 1565.2638763105497,
+      "selection_seconds": 383.5359796611592,
+      "training_and_selection_seconds": 1948.799855971709,
+      "training_tokens": 13808276,
+      "rec_uses": 124036,
+      "unique_rec_positions": 48916,
+      "windows": 19,
+      "absolute_rank_prediction_nonpositive_windows": 9,
+      "ground_prediction_negative_windows": 7,
+      "mean_window_rec_mass": 0.8085735560264738,
+      "initial_tuning_ndcg10": 0.02308621856390257,
+      "best_trained_tuning_step": 1200,
+      "best_trained_tuning_ndcg10": 0.021335207170495855
+    },
+    "raw_window": {
+      "complete": true,
+      "selected_initial": true,
+      "elapsed_seconds": 2499.602108795196,
+      "training_step_seconds": 1560.4786515310407,
+      "selection_seconds": 381.46643955726177,
+      "training_and_selection_seconds": 1941.9450910883024,
+      "training_tokens": 13718913,
+      "rec_uses": 127171,
+      "unique_rec_positions": 48796,
+      "windows": 19,
+      "absolute_rank_prediction_nonpositive_windows": 6,
+      "ground_prediction_negative_windows": 9,
+      "mean_window_rec_mass": 0.8288928318951124,
+      "initial_tuning_ndcg10": 0.02308621856390257,
+      "best_trained_tuning_step": 1200,
+      "best_trained_tuning_ndcg10": 0.021809928898888248
+    }
+  },
+  "cost_note": "fixed alone performs a common initial 4096R/512G audit shared by all methods. Per-run total elapsed times have unequal evaluation overhead; training and selection are reported separately.",
+  "identical_predictions_note": "All methods selected the same initial adapter; zero paired differences/intervals reflect this identity, not statistical equivalence of training strategies."
+}

@@ -1,0 +1,852 @@
+{
+  "complete": true,
+  "phase": "rl_expected",
+  "final_test_evaluated": false,
+  "choices_sha256": "2f8253f684f18c0ddf6b78b8edccd36e5472d327036131f8e698e3bc4719c49a",
+  "baseline_errors": {
+    "rec": 0.0,
+    "ground": 0.0
+  },
+  "audit_linear": {
+    "gap": -0.00023989366176535267,
+    "interval_95": [
+      -0.0004625083532489784,
+      -3.326684940934775e-05
+    ],
+    "mixed_scaled_gains": [
+      0.0005120118479926333,
+      0.00035161653541293834
+    ],
+    "best_single_index_on_audit": 63,
+    "scope": "Descriptive development bootstrap with frozen choice; audit best is diagnostic, not reselection"
+  },
+  "conditions": [
+    {
+      "condition": "uniform",
+      "radius": 0.005,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.004999999888241291,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.012963145039975643,
+          "interval_95": [
+            -0.013894609059207141,
+            -0.012084105983376503
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": -0.006372861098498106,
+          "interval_95": [
+            -0.006920555420219898,
+            -0.00581913081696257
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        -0.004043316934257746,
+        -0.0020972085185348988
+      ],
+      "raw_record_ess": 511.9999999999998,
+      "original_gradient_step_size": 0.021031038789140914
+    },
+    {
+      "condition": "best_single",
+      "radius": 0.005,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.005000000819563866,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0009382003918290138,
+          "interval_95": [
+            0.0006305106333456933,
+            0.0012253638939000663
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0005583120509982109,
+          "interval_95": [
+            0.00022275098599493505,
+            0.0008907691226340828
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.00029899325454607606,
+        0.00018523134349379689
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.0022658883349164984
+    },
+    {
+      "condition": "A",
+      "radius": 0.005,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.005000000353902578,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0007609077729284763,
+          "interval_95": [
+            0.0004926277790218592,
+            0.0010370581527240573
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0005205925554037094,
+          "interval_95": [
+            0.00020666965283453465,
+            0.0008270647493191062
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.00023949042952153832,
+        0.00017218805442098528
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.002164505689779836
+    },
+    {
+      "condition": "B",
+      "radius": 0.005,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.005000000819563866,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0009382003918290138,
+          "interval_95": [
+            0.0006305106333456933,
+            0.0012253638939000663
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0005583120509982109,
+          "interval_95": [
+            0.00022275098599493505,
+            0.0008907691226340828
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.005_convex_unit_best_single",
+      "predicted_scaled_gains_on_audit": [
+        0.00029899325454607606,
+        0.00018523134349379689
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.0022658883349164984
+    },
+    {
+      "condition": "AB",
+      "radius": 0.005,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.0038936366327106953,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0008129221387207508,
+          "interval_95": [
+            0.0005907848477363587,
+            0.001027292245998978
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0005328282713890076,
+          "interval_95": [
+            0.00027017462998628615,
+            0.0007973501575179397
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.000256005813173097,
+        0.00017580830140970948
+      ],
+      "raw_record_ess": 13.539018753603493,
+      "original_gradient_step_size": 0.0021926450811339667
+    },
+    {
+      "condition": "random_pair",
+      "radius": 0.005,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.00385014689527452,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.0002985759638249874,
+          "interval_95": [
+            -0.00048430864699184896,
+            -0.00010580146918073304
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 4.952074959874153e-05,
+          "interval_95": [
+            -0.00020849192515015602,
+            0.0003038698458112774
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        -9.388453102796128e-05,
+        1.7330623326242467e-05
+      ],
+      "raw_record_ess": 13.915525170023344,
+      "original_gradient_step_size": 0.005205581882503352
+    },
+    {
+      "condition": "uniform",
+      "radius": 0.005,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.004999999888241291,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.012963145039975643,
+          "interval_95": [
+            -0.013894609059207141,
+            -0.012084105983376503
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": -0.006372861098498106,
+          "interval_95": [
+            -0.006920555420219898,
+            -0.00581913081696257
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.005_convex_unit_uniform",
+      "predicted_scaled_gains_on_audit": [
+        -0.004043316934257746,
+        -0.0020972085185348988
+      ],
+      "raw_record_ess": 511.9999999999998,
+      "original_gradient_step_size": 0.02103103879630427
+    },
+    {
+      "condition": "best_single",
+      "radius": 0.005,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.005000000819563866,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0009382003918290138,
+          "interval_95": [
+            0.0006305106333456933,
+            0.0012253638939000663
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0005583120509982109,
+          "interval_95": [
+            0.00022275098599493505,
+            0.0008907691226340828
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.005_convex_unit_best_single",
+      "predicted_scaled_gains_on_audit": [
+        0.00029899325454607606,
+        0.00018523134349379689
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.002265888335570593
+    },
+    {
+      "condition": "A",
+      "radius": 0.005,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.005000000353902578,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0007609077729284763,
+          "interval_95": [
+            0.0004926277790218592,
+            0.0010370581527240573
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0005205925554037094,
+          "interval_95": [
+            0.00020666965283453465,
+            0.0008270647493191062
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.005_convex_unit_A",
+      "predicted_scaled_gains_on_audit": [
+        0.00023949042952153832,
+        0.00017218805442098528
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.002164505690054149
+    },
+    {
+      "condition": "B",
+      "radius": 0.005,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.005000000819563866,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0009382003918290138,
+          "interval_95": [
+            0.0006305106333456933,
+            0.0012253638939000663
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0005583120509982109,
+          "interval_95": [
+            0.00022275098599493505,
+            0.0008907691226340828
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.005_convex_unit_best_single",
+      "predicted_scaled_gains_on_audit": [
+        0.00029899325454607606,
+        0.00018523134349379689
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.002265888335570593
+    },
+    {
+      "condition": "AB",
+      "radius": 0.005,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.00500000175088644,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0010433397255837917,
+          "interval_95": [
+            0.0007585008628666401,
+            0.0013189984019845718
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0006829868070781231,
+          "interval_95": [
+            0.00034588768612593413,
+            0.001022365316748619
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.0003287489351046889,
+        0.00022576358949827883
+      ],
+      "raw_record_ess": 13.539018753603493,
+      "original_gradient_step_size": 0.0028156770548537144
+    },
+    {
+      "condition": "random_pair",
+      "radius": 0.005,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.00500000175088644,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.00038716988638043404,
+          "interval_95": [
+            -0.0006287666386924684,
+            -0.00013712950749322775
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 6.291037425398827e-05,
+          "interval_95": [
+            -0.0002710898406803608,
+            0.0003922662814147766
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        -0.00012192331269724253,
+        2.2506449422892962e-05
+      ],
+      "raw_record_ess": 13.915525170023344,
+      "original_gradient_step_size": 0.00676023878971021
+    },
+    {
+      "condition": "uniform",
+      "radius": 0.01,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.010000000707805157,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.026092580519616604,
+          "interval_95": [
+            -0.027980209339875727,
+            -0.024325673561543228
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": -0.012761570513248444,
+          "interval_95": [
+            -0.013865049916785211,
+            -0.011652375373523682
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        -0.008086633868515491,
+        -0.0041944170370697975
+      ],
+      "raw_record_ess": 511.9999999999998,
+      "original_gradient_step_size": 0.04206207757828183
+    },
+    {
+      "condition": "best_single",
+      "radius": 0.01,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.009999999776482582,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0018583978526294231,
+          "interval_95": [
+            0.0012495216447860002,
+            0.002426420059055089
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0011087683960795403,
+          "interval_95": [
+            0.0004368503694422543,
+            0.0017760621267370875
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.0005979865090921521,
+        0.00037046268698759377
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.004531776669832997
+    },
+    {
+      "condition": "A",
+      "radius": 0.01,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.010000001639127731,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0015163836069405079,
+          "interval_95": [
+            0.0009790224255993962,
+            0.002066326874773949
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0010376065038144588,
+          "interval_95": [
+            0.00041150840697810057,
+            0.0016481058439239856
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.00047898085904307663,
+        0.00034437610884197056
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.004329011379559672
+    },
+    {
+      "condition": "B",
+      "radius": 0.01,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.009999999776482582,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0018583978526294231,
+          "interval_95": [
+            0.0012495216447860002,
+            0.002426420059055089
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0011087683960795403,
+          "interval_95": [
+            0.0004368503694422543,
+            0.0017760621267370875
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.01_convex_unit_best_single",
+      "predicted_scaled_gains_on_audit": [
+        0.0005979865090921521,
+        0.00037046268698759377
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.004531776669832997
+    },
+    {
+      "condition": "AB",
+      "radius": 0.01,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.007787276059389114,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0016209008172154427,
+          "interval_95": [
+            0.001178436737973243,
+            0.0020509746507741504
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0010625473223626614,
+          "interval_95": [
+            0.0005371289793401956,
+            0.0015909055946394797
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.000512011626346194,
+        0.00035161660281941896
+      ],
+      "raw_record_ess": 13.539018753603493,
+      "original_gradient_step_size": 0.0043852901622679335
+    },
+    {
+      "condition": "random_pair",
+      "radius": 0.01,
+      "protocol": "convex_unit",
+      "actual_update_norm": 0.00770029379054904,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.0005962932482361794,
+          "interval_95": [
+            -0.0009662474622018635,
+            -0.00021385127911344187
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 9.196531027555466e-05,
+          "interval_95": [
+            -0.0004209415754303336,
+            0.0005989997531287365
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        -0.00018776906205592256,
+        3.4661246652484935e-05
+      ],
+      "raw_record_ess": 13.915525170023344,
+      "original_gradient_step_size": 0.010411163765006703
+    },
+    {
+      "condition": "uniform",
+      "radius": 0.01,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.010000000707805157,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.026092580519616604,
+          "interval_95": [
+            -0.027980209339875727,
+            -0.024325673561543228
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": -0.012761570513248444,
+          "interval_95": [
+            -0.013865049916785211,
+            -0.011652375373523682
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.01_convex_unit_uniform",
+      "predicted_scaled_gains_on_audit": [
+        -0.008086633868515491,
+        -0.0041944170370697975
+      ],
+      "raw_record_ess": 511.9999999999998,
+      "original_gradient_step_size": 0.04206207759260854
+    },
+    {
+      "condition": "best_single",
+      "radius": 0.01,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.009999999776482582,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0018583978526294231,
+          "interval_95": [
+            0.0012495216447860002,
+            0.002426420059055089
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0011087683960795403,
+          "interval_95": [
+            0.0004368503694422543,
+            0.0017760621267370875
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.01_convex_unit_best_single",
+      "predicted_scaled_gains_on_audit": [
+        0.0005979865090921521,
+        0.00037046268698759377
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.004531776671141186
+    },
+    {
+      "condition": "A",
+      "radius": 0.01,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.010000001639127731,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0015163836069405079,
+          "interval_95": [
+            0.0009790224255993962,
+            0.002066326874773949
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0010376065038144588,
+          "interval_95": [
+            0.00041150840697810057,
+            0.0016481058439239856
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.01_convex_unit_A",
+      "predicted_scaled_gains_on_audit": [
+        0.00047898085904307663,
+        0.00034437610884197056
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.004329011380108298
+    },
+    {
+      "condition": "B",
+      "radius": 0.01,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.009999999776482582,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.0018583978526294231,
+          "interval_95": [
+            0.0012495216447860002,
+            0.002426420059055089
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0011087683960795403,
+          "interval_95": [
+            0.0004368503694422543,
+            0.0017760621267370875
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": "r0.01_convex_unit_best_single",
+      "predicted_scaled_gains_on_audit": [
+        0.0005979865090921521,
+        0.00037046268698759377
+      ],
+      "raw_record_ess": 8.0,
+      "original_gradient_step_size": 0.004531776671141186
+    },
+    {
+      "condition": "AB",
+      "radius": 0.01,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.009999999776482582,
+      "audit": {
+        "rec": {
+          "mean_gain": 0.002078413497656584,
+          "interval_95": [
+            0.00151079815113917,
+            0.0026313009788282208
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.001363319344818592,
+          "interval_95": [
+            0.0006888375151902437,
+            0.0020420093438588078
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        0.0006574978702093778,
+        0.00045152717899655766
+      ],
+      "raw_record_ess": 13.539018753603493,
+      "original_gradient_step_size": 0.005631354109707429
+    },
+    {
+      "condition": "random_pair",
+      "radius": 0.01,
+      "protocol": "equal_final_norm",
+      "actual_update_norm": 0.009999998845160007,
+      "audit": {
+        "rec": {
+          "mean_gain": -0.0007747644558548927,
+          "interval_95": [
+            -0.0012544105877168477,
+            -0.00027812266489490867
+          ],
+          "n": 512
+        },
+        "ground": {
+          "mean_gain": 0.0001132739707827568,
+          "interval_95": [
+            -0.0005477016675285995,
+            0.0007682789932005104
+          ],
+          "n": 512
+        }
+      },
+      "reuse_of": null,
+      "predicted_scaled_gains_on_audit": [
+        -0.00024384662539448507,
+        4.5012898845785923e-05
+      ],
+      "raw_record_ess": 13.915525170023344,
+      "original_gradient_step_size": 0.01352047757942042
+    }
+  ],
+  "config": {
+    "experiment_id": "E003",
+    "seed": 10043,
+    "model_seed": 2026,
+    "model": "/zhdd/home/ywliang/models/Qwen3-1.7B",
+    "adapter": "runs/rec_atom_long_uniform/checkpoints/step_003500/adapter",
+    "data": "data/processed/beauty_atom",
+    "groups_per_task": 32,
+    "records_per_group": 8,
+    "reference_folds": 3,
+    "reference_records_per_task_per_fold": 384,
+    "audit_records_per_task": 512,
+    "max_length": 256,
+    "gradient_microbatch": 8,
+    "diagnostic_dtype": "float32",
+    "allow_tf32": false,
+    "unit_direction_norm_floor": 1e-12,
+    "step_radii": [
+      0.005,
+      0.01
+    ],
+    "primary_step_radius": 0.01,
+    "primary_protocol": "convex combination of individually unit-normalized executable batch gradients; shared radius across conditions",
+    "secondary_protocol": "rescale each selected combined direction to the same final norm; never reselect weights on audit",
+    "minimum_scaled_gain": 1e-05,
+    "minimum_scaled_advantage": 1e-05,
+    "bootstrap_replicates": 2000,
+    "reference_selection": "fold 0 only; folds 1 and 2 never select units or mixture coefficients",
+    "opportunity_gate": "Primary SFT: selected mixture uses at least two nonzero units; in both validation folds joint scaled gain and advantage over every single allowed unit exceed the declared minima; audit directional bootstrap gap over the best of all single units has positive lower endpoint; actual primary-radius mixed update improves both targets with positive descriptive intervals and exceeds the discovery-selected best single with a positive descriptive interval. Development evidence only.",
+    "strict_singleton_failure": "Reported separately; not silently equated to marginal improvement over the best existing single unit.",
+    "rl_scope": "Analytic expected gradient for the current single-correct-item exact-match reward: p(target)*g_SFT. Not sampled or long RL training.",
+    "unit_scope": "64 predefined source-homogeneous random batches plus rec-mean, ground-mean and all-record-mean baselines; not an unrestricted per-record or full-dataset optimum",
+    "data_scope": "Existing selection and calibration are development data used before; fold changes do not create sealed confirmation. Final test remains untouched.",
+    "stop_policy": "One fixed discovery/validation pool. Do not resample to obtain a positive result; no new atom method or long training before the primary opportunity gate.",
+    "run_root": "runs/01_02/E003",
+    "result_root": "results/01_02/E003"
+  },
+  "scope": "Frozen-state development diagnosis; rl_expected is analytic, not sampled training",
+  "restoration_error": {
+    "rec": 0.0,
+    "ground": 0.0
+  },
+  "parameters_restored": true,
+  "actual_gap_over_selected_single": {
+    "gap": -1.5230770719891257e-05,
+    "interval_95": [
+      -0.0002083437594766828,
+      0.0001682138725818794
+    ],
+    "scope": "Paired descriptive development bootstrap versus discovery-selected best single"
+  },
+  "development_opportunity_gate": {
+    "multiple_units": true,
+    "both_validation_folds": false,
+    "audit_linear_gap_positive_interval": false,
+    "actual_both_targets_positive_intervals": true,
+    "actual_advantage_positive_interval": false
+  },
+  "passes_development_gate": false,
+  "validation_folds": [
+    {
+      "fold": 1,
+      "mixed_scaled_gains": [
+        0.0005114310955024365,
+        0.000478310534681784
+      ],
+      "best_single_scaled_margin": 0.0005678890589657195,
+      "gap": -8.957852428393548e-05,
+      "passes_point_gate": false
+    },
+    {
+      "fold": 2,
+      "mixed_scaled_gains": [
+        0.00039303437618596156,
+        0.000513135846264418
+      ],
+      "best_single_scaled_margin": 0.0005879865825411764,
+      "gap": -0.00019495220635521484,
+      "passes_point_gate": false
+    }
+  ],
+  "unique_parameter_interventions": 14,
+  "seconds": 262.7444874821231
+}

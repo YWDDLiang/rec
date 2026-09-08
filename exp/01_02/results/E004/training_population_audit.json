@@ -1,0 +1,19 @@
+{
+  "scope": "Post-hoc CPU-only distribution audit; does not alter E004 or establish a causal explanation",
+  "users": 22363,
+  "dense_positions": 127598,
+  "positions_per_user_mean": 5.705763985154049,
+  "positions_per_user_median": 3.0,
+  "largest_positions_per_user": 47,
+  "most_active_10pct_users_position_mass": 0.37663599742942677,
+  "dense_history_length_1_fraction": 0.17526136773303658,
+  "dense_history_length_at_most_2_fraction": 0.35052273546607315,
+  "audit_history_length_at_most_2_fraction": 0.0,
+  "audit_history_length_mean": 6.200927734375,
+  "comparison": "Old one-position-per-user training weights users equally; dense-position sampling changes user weighting and history-length distribution as well as supervision coverage.",
+  "final_test_evaluated": false,
+  "old_training_history_length_1_fraction": 0.0,
+  "old_training_history_length_at_most_2_fraction": 0.3202611456423557,
+  "old_training_history_length_mean": 5.2405312346286275,
+  "dense_training_history_length_mean": 6.303946770325553
+}

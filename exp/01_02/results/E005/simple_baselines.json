@@ -1,0 +1,39 @@
+{
+  "scope": "CPU development sanity baselines, using training counts and supplied history only; no final test",
+  "results": {
+    "office": {
+      "popularity": {
+        "users": 768,
+        "recall@10": 0.032552083333333336,
+        "ndcg@10": 0.013773510977002938
+      },
+      "last_item_then_popularity": {
+        "users": 768,
+        "recall@10": 0.06380208333333333,
+        "ndcg@10": 0.05162839730848654
+      },
+      "recent_history_then_popularity": {
+        "users": 768,
+        "recall@10": 0.07161458333333333,
+        "ndcg@10": 0.05644223377235492
+      }
+    },
+    "industrial": {
+      "popularity": {
+        "users": 768,
+        "recall@10": 0.045572916666666664,
+        "ndcg@10": 0.03220290078262416
+      },
+      "last_item_then_popularity": {
+        "users": 768,
+        "recall@10": 0.0703125,
+        "ndcg@10": 0.05721488614322026
+      },
+      "recent_history_then_popularity": {
+        "users": 768,
+        "recall@10": 0.07291666666666667,
+        "ndcg@10": 0.0572726383927242
+      }
+    }
+  }
+}

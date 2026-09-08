@@ -1,0 +1,283 @@
+{
+  "experiment": "E006",
+  "complete": true,
+  "runs": {
+    "fixed": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E006/rec_atom_fixed/checkpoints/step_001600/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.16796875,
+          "ndcg@10": 0.1393786860058828,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.1171875,
+          "ndcg@10": 0.09010061198946619,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 872.2540548443794,
+      "training_step_seconds": 692.514060809277,
+      "selection_seconds": 0.0,
+      "training_tokens": {
+        "office": 3537716,
+        "industrial": 3609131
+      },
+      "sampled_records": {
+        "office": 51121,
+        "industrial": 51279
+      },
+      "representation_seconds_to_charge": 0.0
+    },
+    "domain_window": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E006/rec_atom_domain_window/checkpoints/step_001600/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.16666666666666666,
+          "ndcg@10": 0.1383894291064157,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.11328125,
+          "ndcg@10": 0.08922585046365178,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 1093.4836893463507,
+      "training_step_seconds": 699.2388293743134,
+      "selection_seconds": 214.70284102391452,
+      "training_tokens": {
+        "office": 3661017,
+        "industrial": 3488760
+      },
+      "sampled_records": {
+        "office": 52818,
+        "industrial": 49582
+      },
+      "representation_seconds_to_charge": 0.0
+    },
+    "atoms_window": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E006/rec_atom_atoms_window/checkpoints/step_001600/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.1640625,
+          "ndcg@10": 0.13689141176622813,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.10546875,
+          "ndcg@10": 0.07829776485244679,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 1094.8600743440911,
+      "training_step_seconds": 690.3337464826182,
+      "selection_seconds": 226.23290349263698,
+      "training_tokens": {
+        "office": 3544562,
+        "industrial": 3618147
+      },
+      "sampled_records": {
+        "office": 51121,
+        "industrial": 51279
+      },
+      "representation_seconds_to_charge": 235.16295662894845
+    },
+    "cluster_window": {
+      "selected_adapter": "/zssd/home/ywliang/ai4s/rec/runs/01_02/E006/rec_atom_cluster_window/checkpoints/step_001600/adapter",
+      "selected_initial": false,
+      "ranking": {
+        "office": {
+          "n": 768,
+          "recall@10": 0.16666666666666666,
+          "ndcg@10": 0.13908535601429872,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "office",
+          "beam_size": 10,
+          "catalog_items": 3459
+        },
+        "industrial": {
+          "n": 768,
+          "recall@10": 0.1171875,
+          "ndcg@10": 0.09051465781156953,
+          "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+          "domain": "industrial",
+          "beam_size": 10,
+          "catalog_items": 3686
+        }
+      },
+      "elapsed_seconds": 1107.5398298613727,
+      "training_step_seconds": 699.4534236723557,
+      "selection_seconds": 228.66037426888943,
+      "training_tokens": {
+        "office": 3534370,
+        "industrial": 3612176
+      },
+      "sampled_records": {
+        "office": 51121,
+        "industrial": 51279
+      },
+      "representation_seconds_to_charge": 235.16295662894845
+    }
+  },
+  "atoms_minus_controls": {
+    "fixed": {
+      "office": {
+        "ndcg_difference": -0.0024872742396546466,
+        "interval_95": [
+          -0.010468399854233075,
+          0.005869154295439469
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      },
+      "industrial": {
+        "ndcg_difference": -0.011802847137019401,
+        "interval_95": [
+          -0.021104381432718734,
+          -0.0025739315714400626
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      }
+    },
+    "domain_window": {
+      "office": {
+        "ndcg_difference": -0.0014980173401875623,
+        "interval_95": [
+          -0.00792308796057449,
+          0.005640448201146101
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      },
+      "industrial": {
+        "ndcg_difference": -0.010928085611204999,
+        "interval_95": [
+          -0.021038106275045897,
+          -0.0016711337699485487
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      }
+    },
+    "cluster_window": {
+      "office": {
+        "ndcg_difference": -0.0021939442480705777,
+        "interval_95": [
+          -0.009877268482883218,
+          0.005748045484955376
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      },
+      "industrial": {
+        "ndcg_difference": -0.012216892959122762,
+        "interval_95": [
+          -0.02142546622865376,
+          -0.003798260197539138
+        ],
+        "users": 768,
+        "scope": "Descriptive paired development-user bootstrap; one training seed"
+      }
+    }
+  },
+  "representation": {
+    "complete": true,
+    "records": 75183,
+    "atom_groups": 16,
+    "cluster_groups": 16,
+    "labels": [
+      "atom_0_1",
+      "atom_0_-1",
+      "atom_1_1",
+      "atom_1_-1",
+      "atom_2_1",
+      "atom_2_-1",
+      "atom_3_1",
+      "atom_3_-1",
+      "atom_4_1",
+      "atom_4_-1",
+      "atom_5_1",
+      "atom_5_-1",
+      "atom_6_1",
+      "atom_6_-1",
+      "atom_7_1",
+      "atom_7_-1"
+    ],
+    "feature_seconds": 230.00861336756498,
+    "total_seconds": 235.16295662894845,
+    "dictionary_fit_records": 4096,
+    "dictionary_mse": 0.8560259899063388,
+    "record_order_sha256": "09e16502a7250687e13565c178a72d4622800d915f43c9d5c60d0a1908dd995e",
+    "atom_support": [
+      7693,
+      5997,
+      5001,
+      7310,
+      8121,
+      11268,
+      9600,
+      11190,
+      10527,
+      9410,
+      6508,
+      7480,
+      9021,
+      5318,
+      16371,
+      19551
+    ],
+    "atom_ess": [
+      3063.6077652950335,
+      2305.990111481061,
+      2503.714623694802,
+      3006.000067852887,
+      2482.0080243287844,
+      4797.671709190816,
+      5018.329011181215,
+      5220.12958763058,
+      4533.621751187992,
+      4040.6215494338094,
+      2567.0038178690215,
+      2825.780907166891,
+      3632.2827109831023,
+      2364.610080934383,
+      9357.073611856864,
+      6147.3762811533
+    ],
+    "representation": "Normalized legal-readout partial-gradient sketch; training-only nuisance fit and signed sparse dictionary. Not an identified user-interest representation.",
+    "cost_scope": "Shared feature preparation cost is charged to both gradient-cluster and atom methods; fixed/domain baselines do not require it",
+    "scope": "Frozen full-training-pool memberships. Every window re-estimates current full trainable-gradient effects using the same importance-sampled query budget."
+  },
+  "next_stage_decision": "Primary joint gain not established: inspect the completed-stage comparison before changing representation, mixture objective or training horizon",
+  "final_test_evaluated": false,
+  "automatic_new_training_started": false
+}

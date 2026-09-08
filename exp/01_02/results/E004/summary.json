@@ -1,0 +1,168 @@
+{
+  "complete": true,
+  "experiment": "E004",
+  "test_evaluated": false,
+  "runs": {
+    "fixed": {
+      "selected_adapter": "runs/rec_atom_long_uniform/checkpoints/step_003500/adapter",
+      "selected_initial": true,
+      "rec": {
+        "n": 4096,
+        "recall@10": 0.03173828125,
+        "ndcg@10": 0.0160324086065965,
+        "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+        "beam_size": 10
+      },
+      "ground": {
+        "n": 512,
+        "recall@10": 0.150390625,
+        "ndcg@10": 0.06529409240275838,
+        "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+        "beam_size": 10
+      },
+      "ground_nll": {
+        "sid_code_nll": 5.089916003285907,
+        "n": 512
+      },
+      "elapsed_seconds": 2407.4874479519203,
+      "training_tokens": 13620774,
+      "unique_rec_positions": 50172,
+      "selection_seconds": 0.0,
+      "gradient_query_records": 0,
+      "vs_initial": {
+        "recall10_difference": 0.0,
+        "ndcg10_difference": 0.0,
+        "recall10_interval_95": [
+          0.0,
+          0.0
+        ],
+        "ndcg10_interval_95": [
+          0.0,
+          0.0
+        ],
+        "scope": "Paired development bootstrap; not final-test confirmation"
+      }
+    },
+    "atoms_window": {
+      "selected_adapter": "runs/rec_atom_long_uniform/checkpoints/step_003500/adapter",
+      "selected_initial": true,
+      "rec": {
+        "n": 4096,
+        "recall@10": 0.03173828125,
+        "ndcg@10": 0.0160324086065965,
+        "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+        "beam_size": 10
+      },
+      "ground": {
+        "n": 512,
+        "recall@10": 0.150390625,
+        "ndcg@10": 0.06529409240275838,
+        "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+        "beam_size": 10
+      },
+      "ground_nll": {
+        "sid_code_nll": 5.089916003285907,
+        "n": 512
+      },
+      "elapsed_seconds": 2527.3940056515858,
+      "training_tokens": 13808276,
+      "unique_rec_positions": 48916,
+      "selection_seconds": 383.5359796611592,
+      "gradient_query_records": 9728,
+      "vs_initial": {
+        "recall10_difference": 0.0,
+        "ndcg10_difference": 0.0,
+        "recall10_interval_95": [
+          0.0,
+          0.0
+        ],
+        "ndcg10_interval_95": [
+          0.0,
+          0.0
+        ],
+        "scope": "Paired development bootstrap; not final-test confirmation"
+      }
+    },
+    "raw_window": {
+      "selected_adapter": "runs/rec_atom_long_uniform/checkpoints/step_003500/adapter",
+      "selected_initial": true,
+      "rec": {
+        "n": 4096,
+        "recall@10": 0.03173828125,
+        "ndcg@10": 0.0160324086065965,
+        "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+        "beam_size": 10
+      },
+      "ground": {
+        "n": 512,
+        "recall@10": 0.150390625,
+        "ndcg@10": 0.06529409240275838,
+        "protocol": "full frozen catalog, constrained normalized beam search, no history masking",
+        "beam_size": 10
+      },
+      "ground_nll": {
+        "sid_code_nll": 5.089916003285907,
+        "n": 512
+      },
+      "elapsed_seconds": 2499.602108795196,
+      "training_tokens": 13718913,
+      "unique_rec_positions": 48796,
+      "selection_seconds": 381.46643955726177,
+      "gradient_query_records": 9728,
+      "vs_initial": {
+        "recall10_difference": 0.0,
+        "ndcg10_difference": 0.0,
+        "recall10_interval_95": [
+          0.0,
+          0.0
+        ],
+        "ndcg10_interval_95": [
+          0.0,
+          0.0
+        ],
+        "scope": "Paired development bootstrap; not final-test confirmation"
+      }
+    }
+  },
+  "comparisons": {
+    "raw_window_vs_fixed": {
+      "recall10_difference": 0.0,
+      "ndcg10_difference": 0.0,
+      "recall10_interval_95": [
+        0.0,
+        0.0
+      ],
+      "ndcg10_interval_95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Paired development bootstrap; not final-test confirmation"
+    },
+    "atoms_window_vs_fixed": {
+      "recall10_difference": 0.0,
+      "ndcg10_difference": 0.0,
+      "recall10_interval_95": [
+        0.0,
+        0.0
+      ],
+      "ndcg10_interval_95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Paired development bootstrap; not final-test confirmation"
+    },
+    "atoms_window_vs_raw_window": {
+      "recall10_difference": 0.0,
+      "ndcg10_difference": 0.0,
+      "recall10_interval_95": [
+        0.0,
+        0.0
+      ],
+      "ndcg10_interval_95": [
+        0.0,
+        0.0
+      ],
+      "scope": "Paired development bootstrap; not final-test confirmation"
+    }
+  }
+}

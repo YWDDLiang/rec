@@ -1,0 +1,124 @@
+{
+  "experiment": "E003",
+  "complete": true,
+  "final_test_evaluated": false,
+  "phases": {
+    "sft": {
+      "support": [
+        48,
+        65
+      ],
+      "passes_development_gate": false,
+      "gate": {
+        "multiple_units": true,
+        "both_validation_folds": true,
+        "audit_linear_gap_positive_interval": false,
+        "actual_both_targets_positive_intervals": true,
+        "actual_advantage_positive_interval": true
+      },
+      "audit_linear": {
+        "gap": -0.00012898444869030102,
+        "interval_95": [
+          -0.0003286011922938574,
+          0.00014673183639402716
+        ],
+        "mixed_scaled_gains": [
+          0.0019455502490071889,
+          0.0014356403720116643
+        ],
+        "best_single_index_on_audit": 65,
+        "scope": "Descriptive development bootstrap with frozen choice; audit best is diagnostic, not reselection"
+      },
+      "actual_gap": {
+        "gap": 0.00017818876992382426,
+        "interval_95": [
+          6.8387747150852525e-06,
+          0.0003478880872570066
+        ],
+        "scope": "Paired descriptive development bootstrap versus discovery-selected best single"
+      },
+      "validation_folds": [
+        {
+          "fold": 1,
+          "mixed_scaled_gains": [
+            0.0017471260248667203,
+            0.001592342265925337
+          ],
+          "best_single_scaled_margin": 0.0014368579026863377,
+          "gap": 0.0001554843632389992,
+          "passes_point_gate": true
+        },
+        {
+          "fold": 2,
+          "mixed_scaled_gains": [
+            0.0016684940574566648,
+            0.0017457455525326311
+          ],
+          "best_single_scaled_margin": 0.0014648357611157753,
+          "gap": 0.00020365829634088955,
+          "passes_point_gate": true
+        }
+      ],
+      "unique_parameter_interventions": 14
+    },
+    "rl_expected": {
+      "support": [
+        36,
+        49
+      ],
+      "passes_development_gate": false,
+      "gate": {
+        "multiple_units": true,
+        "both_validation_folds": false,
+        "audit_linear_gap_positive_interval": false,
+        "actual_both_targets_positive_intervals": true,
+        "actual_advantage_positive_interval": false
+      },
+      "audit_linear": {
+        "gap": -0.00023989366176535267,
+        "interval_95": [
+          -0.0004625083532489784,
+          -3.326684940934775e-05
+        ],
+        "mixed_scaled_gains": [
+          0.0005120118479926333,
+          0.00035161653541293834
+        ],
+        "best_single_index_on_audit": 63,
+        "scope": "Descriptive development bootstrap with frozen choice; audit best is diagnostic, not reselection"
+      },
+      "actual_gap": {
+        "gap": -1.5230770719891257e-05,
+        "interval_95": [
+          -0.0002083437594766828,
+          0.0001682138725818794
+        ],
+        "scope": "Paired descriptive development bootstrap versus discovery-selected best single"
+      },
+      "validation_folds": [
+        {
+          "fold": 1,
+          "mixed_scaled_gains": [
+            0.0005114310955024365,
+            0.000478310534681784
+          ],
+          "best_single_scaled_margin": 0.0005678890589657195,
+          "gap": -8.957852428393548e-05,
+          "passes_point_gate": false
+        },
+        {
+          "fold": 2,
+          "mixed_scaled_gains": [
+            0.00039303437618596156,
+            0.000513135846264418
+          ],
+          "best_single_scaled_margin": 0.0005879865825411764,
+          "gap": -0.00019495220635521484,
+          "passes_point_gate": false
+        }
+      ],
+      "unique_parameter_interventions": 14
+    }
+  },
+  "proceed_to_new_atoms": false
+}
