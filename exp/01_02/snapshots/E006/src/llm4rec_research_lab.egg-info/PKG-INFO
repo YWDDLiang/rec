@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: llm4rec-research-lab
+Version: 0.1.0
+Summary: Auditable capability-directed data selection and exploration research kernels
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy>=1.11
+Requires-Dist: torch>=2.2
+Provides-Extra: test
+Requires-Dist: pytest>=8; extra == "test"
+Provides-Extra: hf
+Requires-Dist: transformers<6,>=4.51; extra == "hf"
+Requires-Dist: peft<1,>=0.15; extra == "hf"
+Requires-Dist: accelerate<2,>=1; extra == "hf"
+Dynamic: license-file

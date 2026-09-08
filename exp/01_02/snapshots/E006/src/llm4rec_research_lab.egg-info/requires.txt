@@ -1,0 +1,11 @@
+numpy>=1.26
+scipy>=1.11
+torch>=2.2
+
+[hf]
+transformers<6,>=4.51
+peft<1,>=0.15
+accelerate<2,>=1
+
+[test]
+pytest>=8

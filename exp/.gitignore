@@ -1,0 +1,3 @@
+# Frozen execution snapshots include small text-only package metadata.
+!01_02/snapshots/*/src/*.egg-info/
+!01_02/snapshots/*/src/*.egg-info/**

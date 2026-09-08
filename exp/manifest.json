@@ -18,6 +18,12 @@
       "source_kind": "curated_archive_summary"
     },
     {
+      "path": ".gitignore",
+      "bytes": 143,
+      "sha256": "c015c9ba1a0c52148abd49c4c4b020d5871154892f6303b55d08fd718418c67c",
+      "source_kind": "curated_archive_summary"
+    },
+    {
       "path": "01_02/configs/e001_mechanism.json",
       "bytes": 1509,
       "sha256": "5f14c6f43e4ccfbb4d97f8b3051d06df7f6c6a2c1e7cb6ce61df7a59dea24b73",
@@ -370,22 +376,6 @@
       "source_kind": "executed_remote_snapshot"
     },
     {
-      "path": "01_02/snapshots/E005/src/rec_lab/__pycache__/__init__.cpython-311.pyc",
-      "bytes": 294,
-      "sha256": "20070527b46e643195714cbcd3a029f6f722a32920e5c176615d427a5b35ca71",
-      "source_path": "runs/01_02/E005/code/baseline_v2/src/rec_lab/__pycache__/__init__.cpython-311.pyc",
-      "source_sha256": "20070527b46e643195714cbcd3a029f6f722a32920e5c176615d427a5b35ca71",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E005/src/rec_lab/__pycache__/checkpointing.cpython-311.pyc",
-      "bytes": 5930,
-      "sha256": "89e6924cfb522cba58432a5a3eaf8696208dff219f4a6ae240c56f4e2df44ee4",
-      "source_path": "runs/01_02/E005/code/baseline_v2/src/rec_lab/__pycache__/checkpointing.cpython-311.pyc",
-      "source_sha256": "89e6924cfb522cba58432a5a3eaf8696208dff219f4a6ae240c56f4e2df44ee4",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
       "path": "01_02/snapshots/E005/src/rec_lab/acquisition.py",
       "bytes": 3939,
       "sha256": "21cc41ce8e7e37b79785c2f2c786f7abe3ef3ebeb6de58a5c92b656274a4a13c",
@@ -618,14 +608,6 @@
       "source_kind": "executed_remote_snapshot"
     },
     {
-      "path": "01_02/snapshots/E006/experiments/01_02/__pycache__/e005_compare.cpython-311.pyc",
-      "bytes": 9678,
-      "sha256": "be02b23eed2573f49612c33bcc1ce6982c3adf87b9b74e8b1625a41d07c36a31",
-      "source_path": "runs/01_02/E006/code/methods/experiments/01_02/__pycache__/e005_compare.cpython-311.pyc",
-      "source_sha256": "be02b23eed2573f49612c33bcc1ce6982c3adf87b9b74e8b1625a41d07c36a31",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
       "path": "01_02/snapshots/E006/experiments/01_02/coordinate_e006.py",
       "bytes": 4261,
       "sha256": "37ff0e305aa489b25ee93f8efd5a571d84423b83fb979681dbc7b2b95ea5a799",
@@ -743,78 +725,6 @@
       "sha256": "955a62cdf1c597f3fe66f0ce17854b1ce3e48c5371e64b36f06cafeaacd011bd",
       "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__init__.py",
       "source_sha256": "955a62cdf1c597f3fe66f0ce17854b1ce3e48c5371e64b36f06cafeaacd011bd",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/__init__.cpython-311.pyc",
-      "bytes": 290,
-      "sha256": "5782177732a40e9dd9467ef3f2d0f0635f486da80a6c6c91b6a378997a92e4b0",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/__init__.cpython-311.pyc",
-      "source_sha256": "5782177732a40e9dd9467ef3f2d0f0635f486da80a6c6c91b6a378997a92e4b0",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/adam_mixture.cpython-311.pyc",
-      "bytes": 6390,
-      "sha256": "2ca79ed343011ac9ed9d73d8e22cb063cde582726480c8c07bde1a1edd17695e",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/adam_mixture.cpython-311.pyc",
-      "source_sha256": "2ca79ed343011ac9ed9d73d8e22cb063cde582726480c8c07bde1a1edd17695e",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/atoms.cpython-311.pyc",
-      "bytes": 8911,
-      "sha256": "ff4e767687c9df645230c16971f2b02275d86092ca55c96805e41124179d7a5e",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/atoms.cpython-311.pyc",
-      "source_sha256": "ff4e767687c9df645230c16971f2b02275d86092ca55c96805e41124179d7a5e",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/checkpointing.cpython-311.pyc",
-      "bytes": 5926,
-      "sha256": "425a3f271706a52d5a640d906b6432ec341e97009d0f6b43cca0917241172453",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/checkpointing.cpython-311.pyc",
-      "source_sha256": "425a3f271706a52d5a640d906b6432ec341e97009d0f6b43cca0917241172453",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/domain_mixture.cpython-311.pyc",
-      "bytes": 19914,
-      "sha256": "cc74640c326f57dcbed3eae9482ae157401c8561fb53f69eafdfb3b57bdeeeda",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/domain_mixture.cpython-311.pyc",
-      "source_sha256": "cc74640c326f57dcbed3eae9482ae157401c8561fb53f69eafdfb3b57bdeeeda",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/multidomain_sid.cpython-311.pyc",
-      "bytes": 14680,
-      "sha256": "b3905903a58240443f5109baff883eafe4e5221675f044236b5843d864275427",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/multidomain_sid.cpython-311.pyc",
-      "source_sha256": "b3905903a58240443f5109baff883eafe4e5221675f044236b5843d864275427",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/numerics.cpython-311.pyc",
-      "bytes": 2561,
-      "sha256": "734af4ceac8ca2d682e994dba8646033756e46181e0e1f3c17aa1e1f238e6db8",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/numerics.cpython-311.pyc",
-      "source_sha256": "734af4ceac8ca2d682e994dba8646033756e46181e0e1f3c17aa1e1f238e6db8",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/sid_data.cpython-311.pyc",
-      "bytes": 16100,
-      "sha256": "6616db907df1aa22247cf6db32ee783d72811daaca7bd1b6eb51687cc6fa6eb3",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/sid_data.cpython-311.pyc",
-      "source_sha256": "6616db907df1aa22247cf6db32ee783d72811daaca7bd1b6eb51687cc6fa6eb3",
-      "source_kind": "executed_remote_snapshot"
-    },
-    {
-      "path": "01_02/snapshots/E006/src/rec_lab/__pycache__/sid_lm.cpython-311.pyc",
-      "bytes": 28394,
-      "sha256": "3307969fa9d20978aa5a93161bc7249f485a0c1b2a6231b80c28b0cdec86f662",
-      "source_path": "runs/01_02/E006/code/methods/src/rec_lab/__pycache__/sid_lm.cpython-311.pyc",
-      "source_sha256": "3307969fa9d20978aa5a93161bc7249f485a0c1b2a6231b80c28b0cdec86f662",
       "source_kind": "executed_remote_snapshot"
     },
     {
@@ -1060,6 +970,12 @@
       "path": "README.md",
       "bytes": 956,
       "sha256": "b546104c1a646ae3d7941888f0f18bd30370fd6225682ca1cb309e40f3d66b09",
+      "source_kind": "curated_archive_summary"
+    },
+    {
+      "path": "validate_archive.py",
+      "bytes": 1846,
+      "sha256": "2cb4243cd863264e4255c862a80c9ddb8b3fac3eeb24998da8d4a75193e9d2d0",
       "source_kind": "curated_archive_summary"
     }
   ]
