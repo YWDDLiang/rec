@@ -1,0 +1,1 @@
+{"record_id": "synthetic-schema-row", "root_id": "synthetic-root", "task": "next_item", "domain": "example", "source": "schema-only", "split": "train", "input_ids": [1, 5, 9, 2], "labels": [-100, -100, 9, 2], "recipe_id": "illustration-not-a-production-tokenizer", "user_id": "synthetic-user", "label_origin": "synthetic"}

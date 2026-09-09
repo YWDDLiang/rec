@@ -1,0 +1,10 @@
+# CPU kernels tested with the actual environment recorded under results/.
+numpy>=1.26,<3
+scipy>=1.11,<2
+scikit-learn>=1.3,<2
+torch>=2.2,<3
+pytest>=8,<10
+# Optional REAL local causal-LM runs (NOT exercised with weights in this delivery):
+# transformers>=4.51,<6
+# peft>=0.15,<1
+# accelerate>=1,<2

@@ -1,0 +1,14 @@
+{
+  "budget_tokens": 500000,
+  "ridge": 1.0,
+  "coverage_weight": 1.0,
+  "utility_weight": 0.0,
+  "seed": 42,
+  "min_rows": {},
+  "max_rows": {},
+  "protected": [],
+  "provenance_cap": null,
+  "shortlist": 256,
+  "keep_all_when_fits": true,
+  "stop_nonpositive": true
+}

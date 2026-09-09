@@ -1,0 +1,10 @@
+usage: __main__.py [-h]
+                   {reservoir,probe,fit,select,refill,align,plan,train} ...
+
+PDF-aligned budgeted data selection for causal-LLM recommendation
+
+positional arguments:
+  {reservoir,probe,fit,select,refill,align,plan,train}
+
+options:
+  -h, --help            show this help message and exit

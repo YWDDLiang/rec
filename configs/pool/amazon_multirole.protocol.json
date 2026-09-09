@@ -1,0 +1,43 @@
+{
+  "task_source": "LC-Rec or MiniOneRec native frozen SFT",
+  "data": "Original protocol first; separate Amazon Reviews2023 extension",
+  "model": "Qwen/Qwen3-1.7B",
+  "cross_backbone": "meta-llama/Llama-3.2-3B-Instruct",
+  "primary": "next-item full-catalog legal SID ranking",
+  "guard_tasks": [
+    "native index-language alignment",
+    "native preference/intent tasks with label provenance"
+  ],
+  "warnings": [
+    "No fabricated SID tokenizer; use native warmed model and catalog",
+    "No target-review information in next-item inputs",
+    "Our generic example task builder is NOT full LC-Rec reproduction"
+  ],
+  "status": "planned, no real pretrained run",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "probe": {
+    "dimension": 512,
+    "atoms": 64,
+    "sparsity": 4,
+    "fit_reservoir_rows": 8192
+  },
+  "budget_axes": {
+    "independent_root_pool": [
+      "small",
+      "reference",
+      "4x",
+      "16x"
+    ],
+    "task_variants": [
+      "native",
+      "new verified constraints",
+      "paraphrase stress only"
+    ],
+    "training_tokens": "held fixed independently of pool"
+  },
+  "external_baselines_status": "not reproduced in this delivery"
+}

@@ -1,0 +1,41 @@
+{
+  "task_source": "KuaiSAR real search and recommendation events",
+  "data": "Official full/small naming must be checked",
+  "model": "local causal LLM with declared ID/category representation",
+  "primary": [
+    "service-specific ranking",
+    "worst service"
+  ],
+  "status": "feasibility protocol, not a delivered native dataset adapter",
+  "warnings": [
+    "keyword and caption hashed; cannot claim original-language understanding",
+    "search_item_related only applicable when search=1",
+    "Same timestamp does not imply ordered interactions"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "probe": {
+    "dimension": 512,
+    "atoms": 64,
+    "sparsity": 4,
+    "fit_reservoir_rows": 8192
+  },
+  "budget_axes": {
+    "independent_root_pool": [
+      "small",
+      "reference",
+      "4x",
+      "16x"
+    ],
+    "task_variants": [
+      "native",
+      "new verified constraints",
+      "paraphrase stress only"
+    ],
+    "training_tokens": "held fixed independently of pool"
+  },
+  "external_baselines_status": "not reproduced in this delivery"
+}

@@ -8,7 +8,7 @@
 
 ## 阅读入口
 
-[完整研究主报告](docs/RESEARCH_REPORT_ZH.md) · [10方向与数学索引](docs/ideas/README.md) · [新颖性碰撞](docs/matrices/novelty_collision_matrix.md) · [实际验证](docs/VALIDATION.md) · [严肃审计与修订](docs/AUDIT.md) · [实施规格](docs/IMPLEMENTATION.md) · [49项一手来源](references/README.md) · [下一位研究者交接](docs/HANDOFF.md)
+[完整研究主报告](docs/RESEARCH_REPORT_ZH.md) · [10方向与数学索引](docs/ideas/README.md) · [Idea 01：Joint Learning Opportunity](docs/ideas/01_joint_learning_and_complementarity.md) · [Idea 02：Behavioral Gradient Atoms](docs/ideas/02_personalized_atoms.md) · [Idea 11：预算条件行为选择](docs/ideas/11_budget_conditioned_behavioral_selection.md) · [数据丰富选择与数据混合](docs/landscape/05_data_rich_selection_and_data_mixture.md) · [新颖性碰撞](docs/matrices/novelty_collision_matrix.md) · [实际验证](docs/VALIDATION.md) · [严肃审计与修订](docs/AUDIT.md) · [实施规格](docs/IMPLEMENTATION.md) · [49项一手来源](references/README.md) · [下一位研究者交接](docs/HANDOFF.md)
 
 ## 核心问题
 

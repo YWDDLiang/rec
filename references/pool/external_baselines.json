@@ -1,0 +1,31 @@
+{
+  "baseline_ids": [
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S20",
+    "S21"
+  ],
+  "status": "not reproduced",
+  "requirements": [
+    "Pin official code/data/evaluator revisions before running",
+    "Match backbone, task pool, train token budget and reference access",
+    "Account for all selection compute",
+    "Do not relabel internal proxy kernels as official methods"
+  ],
+  "mixture_context_ids": [
+    "S26",
+    "S27",
+    "S28",
+    "S29",
+    "S30"
+  ],
+  "scalable_attribution_context_ids": [
+    "S31"
+  ]
+}

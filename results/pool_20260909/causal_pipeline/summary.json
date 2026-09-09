@@ -1,0 +1,193 @@
+{
+  "steps": 8,
+  "occurrences": 64,
+  "tokens": 128,
+  "input_tokens": 320,
+  "seconds": 0.01685942399990381,
+  "losses": [
+    3.4619609117507935,
+    3.2663618326187134,
+    3.2194114327430725,
+    3.1182143688201904,
+    3.0724228024482727,
+    2.884616196155548,
+    2.777494966983795,
+    2.8226242661476135
+  ],
+  "consumed_ids": [
+    "12",
+    "24",
+    "46",
+    "47",
+    "2",
+    "41",
+    "34",
+    "7",
+    "3",
+    "39",
+    "19",
+    "4",
+    "37",
+    "32",
+    "28",
+    "5",
+    "47",
+    "5",
+    "37",
+    "39",
+    "4",
+    "34",
+    "7",
+    "24",
+    "19",
+    "41",
+    "3",
+    "32",
+    "28",
+    "12",
+    "46",
+    "2",
+    "12",
+    "41",
+    "5",
+    "19",
+    "28",
+    "39",
+    "32",
+    "46",
+    "4",
+    "47",
+    "34",
+    "7",
+    "3",
+    "2",
+    "37",
+    "24",
+    "37",
+    "7",
+    "4",
+    "3",
+    "47",
+    "5",
+    "12",
+    "24",
+    "34",
+    "39",
+    "32",
+    "28",
+    "2",
+    "19",
+    "41",
+    "46"
+  ],
+  "scope": "random tiny autoregressive model; no recommendation metric",
+  "initial_state": "844cacc5773c6ed6892b620913cfdd9022e1194cc56624685cb36d9a48c5ea56",
+  "final_state": "44dc887331857f821e467e76ce4562ae12b9f75a601e8d1fab1304262477f4dc",
+  "selection": {
+    "status": "selected",
+    "selected_rows": 16,
+    "tokens": 32,
+    "unused_tokens": 0,
+    "pool_rows": 48,
+    "pool_tokens": 96,
+    "cell_counts": {
+      "[\"item_grounding\",\"a\"]": 8,
+      "[\"next_item\",\"a\"]": 8
+    },
+    "objective": 7.371525564095538,
+    "trace_first100": [
+      {
+        "index": 34,
+        "reason": "full_code",
+        "spent_tokens": 2
+      },
+      {
+        "index": 32,
+        "reason": "full_code",
+        "spent_tokens": 4
+      },
+      {
+        "index": 19,
+        "reason": "full_code",
+        "spent_tokens": 6
+      },
+      {
+        "index": 41,
+        "reason": "full_code",
+        "spent_tokens": 8
+      },
+      {
+        "index": 4,
+        "reason": "full_code",
+        "spent_tokens": 10
+      },
+      {
+        "index": 39,
+        "reason": "full_code",
+        "spent_tokens": 12
+      },
+      {
+        "index": 12,
+        "reason": "full_code",
+        "spent_tokens": 14
+      },
+      {
+        "index": 7,
+        "reason": "full_code",
+        "spent_tokens": 16
+      },
+      {
+        "index": 5,
+        "reason": "full_code",
+        "spent_tokens": 18
+      },
+      {
+        "index": 2,
+        "reason": "full_code",
+        "spent_tokens": 20
+      },
+      {
+        "index": 47,
+        "reason": "full_code",
+        "spent_tokens": 22
+      },
+      {
+        "index": 46,
+        "reason": "full_code",
+        "spent_tokens": 24
+      },
+      {
+        "index": 3,
+        "reason": "full_code",
+        "spent_tokens": 26
+      },
+      {
+        "index": 28,
+        "reason": "full_code",
+        "spent_tokens": 28
+      },
+      {
+        "index": 37,
+        "reason": "full_code",
+        "spent_tokens": 30
+      },
+      {
+        "index": 24,
+        "reason": "full_code",
+        "spent_tokens": 32
+      }
+    ],
+    "scope": "one-pass admission budget; training occurrences accounted separately",
+    "algorithm": "residual-quota-feasible (possibly stochastic) cost-aware greedy; no constrained approximation certificate",
+    "selection_seconds": 0.0022982819998560444
+  },
+  "plan": {
+    "tokens": 128,
+    "unused_tokens": 0,
+    "occurrences": 64,
+    "unique_records": 16,
+    "duplicate_occurrence_fraction": 0.75,
+    "input_tokens": 320,
+    "max_epochs": 100
+  }
+}

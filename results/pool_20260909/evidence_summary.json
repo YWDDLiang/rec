@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-09",
+  "new_unit_tests_passed": 56,
+  "uploaded_base_tests_passed": 110,
+  "combined_passed": 166,
+  "test_log": "pytest_final.log",
+  "synthetic_linear_training_runs": 80,
+  "tiny_causal_pipeline_executed": true,
+  "real_pretrained_llm_executed": false,
+  "real_recommendation_benchmark_executed": false,
+  "external_baselines_reproduced": false,
+  "cuda_available": false,
+  "remote_writes": false,
+  "regime_results": [
+    {
+      "regime": "scarce_balanced",
+      "method": "all_pool_uniform",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "scarce_balanced",
+      "method": "full_code_coverage",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "scarce_balanced",
+      "method": "random_admission",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "scarce_balanced",
+      "method": "signed_target_coverage",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "rich_balanced",
+      "method": "all_pool_uniform",
+      "mean_mse": 0.009315961412813923,
+      "std_across_seeds": 0.0010464407297455438
+    },
+    {
+      "regime": "rich_balanced",
+      "method": "full_code_coverage",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "rich_balanced",
+      "method": "random_admission",
+      "mean_mse": 0.031005390031145386,
+      "std_across_seeds": 0.010739311135384911
+    },
+    {
+      "regime": "rich_balanced",
+      "method": "signed_target_coverage",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "rich_redundant",
+      "method": "all_pool_uniform",
+      "mean_mse": 0.4800930430582572,
+      "std_across_seeds": 0.060216061065173514
+    },
+    {
+      "regime": "rich_redundant",
+      "method": "full_code_coverage",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "rich_redundant",
+      "method": "random_admission",
+      "mean_mse": 0.561580385760664,
+      "std_across_seeds": 0.06955085054917944
+    },
+    {
+      "regime": "rich_redundant",
+      "method": "signed_target_coverage",
+      "mean_mse": 0.0063626854411359445,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "rich_rare_wrong_labels",
+      "method": "all_pool_uniform",
+      "mean_mse": 1.3153975763915908,
+      "std_across_seeds": 0.10003315889145897
+    },
+    {
+      "regime": "rich_rare_wrong_labels",
+      "method": "full_code_coverage",
+      "mean_mse": 3.073807875184894,
+      "std_across_seeds": 0.0
+    },
+    {
+      "regime": "rich_rare_wrong_labels",
+      "method": "random_admission",
+      "mean_mse": 1.2649537186619308,
+      "std_across_seeds": 0.1340082125843445
+    },
+    {
+      "regime": "rich_rare_wrong_labels",
+      "method": "signed_target_coverage",
+      "mean_mse": 0.8333333333333444,
+      "std_across_seeds": 1.2412670766236366e-16
+    }
+  ],
+  "verdict": "Kernels and CPU training path tested. No claim of real LLM4Rec improvement or atom superiority."
+}

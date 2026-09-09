@@ -1,0 +1,131 @@
+{
+  "rows_hash": "090d7014d3394595d156cf5070c24b674bfa58d172bb9450034f7635bf65990d",
+  "cache_meta": {
+    "record_ids": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47"
+    ],
+    "rows_hash": "090d7014d3394595d156cf5070c24b674bfa58d172bb9450034f7635bf65990d",
+    "recipe_id": "tiny-common-recipe",
+    "base_revision": "random-tiny-not-pretrained",
+    "trainable_state_hash": "844cacc5773c6ed6892b620913cfdd9022e1194cc56624685cb36d9a48c5ea56",
+    "manifest": [
+      {
+        "name": "emb.weight",
+        "shape": [
+          32,
+          12
+        ],
+        "start": 0,
+        "end": 384,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "proj.weight",
+        "shape": [
+          32,
+          12
+        ],
+        "start": 384,
+        "end": 768,
+        "dtype": "torch.float32"
+      },
+      {
+        "name": "proj.bias",
+        "shape": [
+          32
+        ],
+        "start": 768,
+        "end": 800,
+        "dtype": "torch.float32"
+      }
+    ],
+    "projection_hash": "69b8eb7d6209eab048af64895cf77e072a52f1da9015f236db91dad7f63cca7d",
+    "projection_dimension": 16,
+    "seed": 42,
+    "split": "train",
+    "seconds": 0.023942021999801,
+    "probe_mode": "eval with autograd; fixed checkpoint; response token mean; all requires_grad parameters",
+    "scope": "identity-gradient geometry, not AdamW update or ranking gain",
+    "numpy_version": "2.3.5",
+    "file_hashes": {
+      "raw.npy": "c5a114858fa87be43585bac1ccec9d82aeaee854d3d923c14724249fcb36e243",
+      "unit.npy": "5e8c488e6a4c85ff17154bc348ff78eccbae2e4b39365a0966b40714f0a248e0",
+      "norms.npy": "23ba950c4160dc8f435a2ee8e634c9d9c9ade5c78bde71073f322f960146dab7",
+      "losses.npy": "190934af62938e51c569aec1b50b83199fbf39ebcf5cd83f7c9f2d61400070d4",
+      "buckets.npy": "9f1d1def4ea31c75e8471cac1cdc1a240fc641a4c2d82300188e588800a59b80",
+      "signs.npy": "afff210b399b6557054d5c201aaa6df0929eab0d0c06ac170ea21965c95da19f"
+    }
+  },
+  "fit_seconds": 0.6197564069998407,
+  "config": {
+    "command": "fit",
+    "records": "results/pool_20260909/causal_pipeline/train.jsonl",
+    "cache": "results/pool_20260909/causal_pipeline/cache",
+    "out": "results/pool_20260909/causal_pipeline/fit",
+    "atoms": 8,
+    "sparsity": 4,
+    "fit_limit": 8192,
+    "max_iter": 20,
+    "seed": 42
+  },
+  "dictionary_hash": "93b7698760fd28b6da181c3cab0b1ae7acd4b86915cc296dfe146999c31a149b",
+  "codes_hash": "cac2b7d65d7b2804e9d5896f4192beca0009d78c84b9c303c7ab4e1339481af3",
+  "diagnostics": {
+    "rows": 48,
+    "atoms": 8,
+    "dominant_share_mean": 0.5002584106783464,
+    "dominant_share_ge_0_7": 0.08333333333333333,
+    "reconstruction_error_mean": 0.35881387034422607,
+    "active_count_mean": 4.0,
+    "effective_rank_proxy": 7.721883850724326,
+    "gram_offdiagonal_norm": 2.535126104791176,
+    "scope": "probe geometry only; not number of true interests or recommendation quality"
+  }
+}

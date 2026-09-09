@@ -1,0 +1,15 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "torch": "2.10.0+cpu",
+  "cuda": false,
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "pytest": "9.0.2",
+  "transformers_installed": false,
+  "peft_installed": false,
+  "reference_repository_commit": "01e124d55d0f43360474e48d3cc44ce44edb00d9",
+  "reference_research_commit": "e6a3672779d48c4ab66c6d050dabac17aece8871",
+  "base_tests_source": "user-uploaded rec_repository.zip; not every frozen experiment snapshot"
+}

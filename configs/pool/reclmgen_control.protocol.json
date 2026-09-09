@@ -1,0 +1,47 @@
+{
+  "task_source": "microsoft/RecAI/RecLM-gen frozen native SFT",
+  "data": "native sub_movie and steam track; no dynamic regeneration after selection",
+  "model": "Qwen/Qwen3-1.7B matched-backbone adaptation",
+  "cross_backbone": "meta-llama/Llama-3.2-3B-Instruct",
+  "primary": [
+    "ranking",
+    "constraint satisfaction"
+  ],
+  "guard_tasks": [
+    "negative category constraints",
+    "category proportions",
+    "legal list length"
+  ],
+  "warnings": [
+    "Teacher labels are not observed user preferences",
+    "Must retain original candidate universe and evaluator",
+    "Native production encoding bridge needs integration"
+  ],
+  "status": "planned, no real pretrained run",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "probe": {
+    "dimension": 512,
+    "atoms": 64,
+    "sparsity": 4,
+    "fit_reservoir_rows": 8192
+  },
+  "budget_axes": {
+    "independent_root_pool": [
+      "small",
+      "reference",
+      "4x",
+      "16x"
+    ],
+    "task_variants": [
+      "native",
+      "new verified constraints",
+      "paraphrase stress only"
+    ],
+    "training_tokens": "held fixed independently of pool"
+  },
+  "external_baselines_status": "not reproduced in this delivery"
+}
